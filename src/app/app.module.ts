@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-
-
-const appRoutes: Routes = [
-  // routes should be ordered from most specific to least specific.
-  // { path: 'authcallback', component: AuthenticationCallbackComponent },
-  // { path: 'checkoutsessioncallback/:id', component: CheckoutSessionCallbackComponent },
-  // { path: 'editor/:id', component: DiagramEditorComponent, canActivate: [AuthGuard], canDeactivate: [DiagramEditorDeactivateGuard], },
-  // { path: 'logout', component: LogoutComponent, },
-  // { path: 'viewer/:id', component: DiagramViewerComponent, },
-  // { path: '', component: DiagramEditorComponent, canActivate: [AuthGuard], /*resolve: {userProfileData: UserProfileResolverService}*/ }, // default route
-  { path: '**', redirectTo: '/', }, // wildcard route
-];
+import { AboutComponent } from './components/about/about.component';
+import { CustomerTestimonialsComponent } from './components/customer-testimonials/customer-testimonials.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { PricingTablesComponent } from './components/pricing-tables/pricing-tables.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HeroComponent,
+    FeaturesComponent,
+    PricingTablesComponent,
+    AboutComponent,
+    CustomerTestimonialsComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
