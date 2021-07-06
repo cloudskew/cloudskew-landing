@@ -1,0 +1,56 @@
+.cs-header {
+    width: 80vw;
+    height: 150px;
+    margin: auto; /* for horizontal centering */
+
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-header-branding {
+    /* flex container */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cs-header-branding-logo a img {
+    display: block; /* needed for vertical centering */
+    margin: auto 10px auto 0; /* right margin at 10px */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cs-header-branding-text {
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cs-header-nav {
+    /* flex container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cs-header-nav-link {
+    margin: auto 0 auto 35px; /* left margin at 35px */
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cs-cta-button {
+    color: white;
+    background-color: #00BBB0;
+    padding: 15px 25px;
+    border-radius: 35px;
+    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}

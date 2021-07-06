@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  cdnUrlPrefix: 'https://assets.cloudskew.com',
 };

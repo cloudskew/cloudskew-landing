@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { CustomerTestimonialsComponent } from './components/customer-testimonials/customer-testimonials.component';
@@ -23,6 +25,8 @@ import { PricingTablesComponent } from './components/pricing-tables/pricing-tabl
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
