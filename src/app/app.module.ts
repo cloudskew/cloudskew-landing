@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { PricingTablesComponent } from './components/pricing-tables/pricing-tables.component';
+import { SamplesComponent } from './components/samples/samples.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
@@ -20,7 +21,8 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     FeaturesComponent,
     PricingTablesComponent,
     AboutComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    SamplesComponent
   ],
   imports: [
     BrowserModule,
