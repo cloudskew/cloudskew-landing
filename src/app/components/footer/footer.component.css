@@ -1,3 +1,30 @@
 .cs-footer {
-    height: 600px;/* @todo: for testing only, remove later */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 50px 5px;
+
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    background-color: aliceblue;  /* @todo */
+}
+
+.cs-footer-column {
+    background-color: lightgreen; /* @todo */
+
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cs-footer-column-item {
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
