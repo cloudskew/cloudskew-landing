@@ -4,7 +4,7 @@
     <div class="cs-header-branding">
         <!-- branding logo -->
         <div class="cs-header-branding-logo">
-            <a routerLink="/">
+            <a href="/">
                 <img [src]="this.brandingLogoUrl" title="CloudSkew">
             </a>
         </div>
@@ -12,15 +12,15 @@
         <div class="cs-header-branding-text">CloudSkew</div>
     </div>
 
-    <!-- nav / links section -->
+    <!-- nav / links section (desktop only) -->
     <div class="cs-header-nav">
-        <a class="cs-header-nav-link">Samples</a>
-        <a class="cs-header-nav-link">Pricing</a>
-        <a class="cs-header-nav-link">Docs</a>
-        <a class="cs-header-nav-link">Status</a>
-        <a class="cs-header-nav-link" routerLink="/">Blog</a>
-        <a class="cs-header-nav-link" routerLink="/" fragment="about">About</a>
-        <div class="cs-header-nav-link cs-cta-button">Go To App</div>
+        <a class="cs-header-nav-link" href="#samples">Samples</a>
+        <a class="cs-header-nav-link" href="#about">Pricing</a>
+        <a class="cs-header-nav-link" href="#docs">Docs</a>
+        <a class="cs-header-nav-link" href="#status">Status</a>
+        <a class="cs-header-nav-link" href="#blog">Blog</a>
+        <a class="cs-header-nav-link" href="#about">About</a>
+        <a class="cs-header-nav-link cs-cta-button" [href]="this.appUrl">Go To App</a>
     </div>
 
 </div>
