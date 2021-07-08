@@ -1,0 +1,4 @@
+.cs-hero {
+    background-image: linear-gradient(white, #E5E5E5);
+    height: 600px; /* @todo: for testing only, remove later */
+}
