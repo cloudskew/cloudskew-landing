@@ -10,6 +10,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { PricingTablesComponent } from './components/pricing-tables/pricing-tables.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const appRoutes: Routes = [
+  // routes should be ordered from most specific to least specific.
+  { path: '**', redirectTo: '/', }, // wildcard route
+];
 
 
 @NgModule({
@@ -27,6 +34,7 @@ import { PricingTablesComponent } from './components/pricing-tables/pricing-tabl
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

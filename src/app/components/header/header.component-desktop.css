@@ -9,6 +9,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .cs-header {
+        width: 90vw;
+    }
+}
+
+
 .cs-header-branding {
     /* flex container */
     display: flex;
@@ -37,11 +44,18 @@
     align-items: center;
 }
 
+/* Applicable to <a> tags only */
 .cs-header-nav-link {
     margin: auto 0 auto 35px; /* left margin at 35px */
     font-family: "Open Sans",sans-serif;
     font-size: 18px;
     font-weight: 600;
+    color: black;
+    text-decoration: none; /* removes text decorations related to <a> hyperlinks */
+}
+
+.cs-header-nav-link:hover, .cs-header-nav-link:focus {
+    text-decoration: underline;
 }
 
 .cs-cta-button {
@@ -53,4 +67,8 @@
     font-family: "Open Sans",sans-serif;
     font-size: 20px;
     font-weight: 700;
+}
+
+.cs-cta-button:hover, .cs-cta-button:focus {
+    text-decoration: none;
 }
