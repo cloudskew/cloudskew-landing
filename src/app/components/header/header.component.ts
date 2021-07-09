@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   appUrl = environment.appUrl;
   blogUrl = environment.blogUrl;
   brandingLogoUrl = `${environment.cdnUrlPrefix}/assets/logos/cloudskew-logo.png`
+  docsUrl = environment.docsUrl;
 
   constructor() { }
 

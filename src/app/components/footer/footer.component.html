@@ -2,68 +2,69 @@
 
     <!-- column: company -->
     <div class="cs-footer-column cs-footer-column-primary">
-        <div class="cs-footer-column-item">
-            CloudSkew
+
+            <!-- branding -->
+            <div class="cs-footer-column-item cs-footer-column-branding">
+
+            <!-- branding logo -->
+            <div class="cs-footer-column-branding-logo">
+                <a href="#">
+                    <img [src]="this.brandingLogoUrl" title="CloudSkew">
+                </a>
+            </div>
+
+            <div class="cs-footer-column-branding-text">CloudSkew</div>
+
+        </div>
+        <div class="cs-footer-column-item cs-footer-column-subheader">
+            An online diagram and flowchart editor
         </div>
         <div class="cs-footer-column-item">
-            An online editor
+            © 2019 - Present: Skewed Ventures Private Limited
         </div>
         <div class="cs-footer-column-item">
-            Copyright: 2019 - Present: Skewed Ventures Private Limited
+            /* social icons */
         </div>
     </div>
 
     <!-- column: product  -->
     <div class="cs-footer-column">
-        <div class="cs-footer-column-item">
+        <div class="cs-footer-column-item cs-footer-column-header">
             Product
         </div>
         <div class="cs-footer-column-item">
-            Features
+            <a class="cs-footer-column-item-link" href="#features">Features</a>
         </div>
         <div class="cs-footer-column-item">
-            Testimonials
+            <a class="cs-footer-column-item-link" href="#testimonials">Testimonials</a>
         </div>
         <div class="cs-footer-column-item">
-            Samples
+            <a class="cs-footer-column-item-link" href="#samples">Samples</a>
         </div>
         <div class="cs-footer-column-item">
-            Pricing
+            <a class="cs-footer-column-item-link" href="#pricing">Pricing</a>
         </div>
     </div>
 
     <!-- column: resources -->
     <div class="cs-footer-column">
-        <div class="cs-footer-column-item">
+        <div class="cs-footer-column-item cs-footer-column-header">
             Resources
         </div>
         <div class="cs-footer-column-item">
-            Status
+            <a class="cs-footer-column-item-link" [href]="this.statusUrl" target="_blank">Status</a>
         </div>
         <div class="cs-footer-column-item">
-            Blog
+            <a class="cs-footer-column-item-link" [href]="this.blogUrl" target="_blank">Blog</a>
         </div>
         <div class="cs-footer-column-item">
-            Docs
+            <a class="cs-footer-column-item-link" [href]="this.docsUrl" target="_blank">Docs</a>
         </div>
         <div class="cs-footer-column-item">
-            Privacy Policy
+            <a class="cs-footer-column-item-link" [href]="this.privacyPolicyUrl" target="_blank">Privacy Policy</a>
         </div>
         <div class="cs-footer-column-item">
-            Terms of Use
-        </div>
-    </div>
-
-    <!-- column: connect with us -->
-    <div class="cs-footer-column">
-        <div class="cs-footer-column-item">
-            Connect With Us 
-        </div>
-        <div class="cs-footer-column-item">
-            Email: support@cloudskew.com 
-        </div>
-        <div class="cs-footer-column-item">
-            Social 
+            <a class="cs-footer-column-item-link" [href]="this.termsOfServiceUrl" target="_blank">Terms of Service</a>
         </div>
     </div>
 

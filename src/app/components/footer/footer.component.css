@@ -1,7 +1,7 @@
 .cs-footer {
     width: 80vw;
     margin: auto; /* for horizontal centering */
-    padding: 50px 5px;
+    padding: 50px 5px 0px 5px;
 
     /* flex container */
     display: flex;
@@ -14,6 +14,7 @@
 
 .cs-footer-column {
     background-color: lightgreen; /* @todo */
+    margin-bottom: 30px;
 
     /* flex container */
     display: flex;
@@ -24,7 +25,41 @@
 
 .cs-footer-column-item {
     font-family: "Open Sans",sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 20px;
+}
+
+.cs-footer-column-item-link {
+    color: black; /* @todo: change this to an off-black color later */
+    text-decoration: none; /* removes text decorations related to <a> hyperlinks */
+}
+
+.cs-footer-column-item-link:hover, .cs-footer-column-item-link:focus {
+    text-decoration: underline;
+}
+
+.cs-footer-column-header {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cs-footer-column-branding {
+    /* flex container */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cs-footer-column-branding-logo a img {
+    display: block; /* needed for vertical centering */
+    margin: auto 10px auto 0; /* right margin at 10px */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cs-footer-column-branding-text {
+    font-size: 30px;
+    font-weight: 700;
 }
