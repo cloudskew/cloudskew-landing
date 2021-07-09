@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { UrlConstants } from 'src/app/constants/urlConstants';
 
 @Component({
   selector: 'app-footer',
@@ -8,17 +8,17 @@ import { environment } from 'src/environments/environment';
 })
 export class FooterComponent implements OnInit {
 
-  appUrl = environment.appUrl;
-  blogUrl = environment.blogUrl;
-  brandingLogoUrl = `${environment.cdnUrlPrefix}/assets/logos/cloudskew-logo.png`
-  docsUrl = environment.docsUrl;
-  privacyPolicyUrl = `${environment.docsUrl}/about/privacy-policy.html`;
-  statusUrl = `${environment.docsUrl}/status/current-status.html`;
-  termsOfServiceUrl = `${environment.docsUrl}/about/terms-of-service.html`;
+  //
+  appUrl = UrlConstants.appUrl;
+  blogUrl = UrlConstants.blogUrl;
+  brandingLogoUrl = UrlConstants.brandingLogoUrl;
+  docsUrl = UrlConstants.docsUrl;
+  privacyPolicyUrl = UrlConstants.privacyPolicyUrl;
+  statusUrl = UrlConstants.statusUrl;
+  termsOfServiceUrl = UrlConstants.termsOfServiceUrl;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

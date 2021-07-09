@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { UrlConstants } from 'src/app/constants/urlConstants';
 
 @Component({
   selector: 'app-header',
@@ -11,14 +11,14 @@ import { environment } from 'src/environments/environment';
 })
 export class HeaderComponent implements OnInit {
 
-  appUrl = environment.appUrl;
-  blogUrl = environment.blogUrl;
-  brandingLogoUrl = `${environment.cdnUrlPrefix}/assets/logos/cloudskew-logo.png`
-  docsUrl = environment.docsUrl;
+  //
+  appUrl = UrlConstants.appUrl;
+  blogUrl = UrlConstants.blogUrl;
+  brandingLogoUrl = UrlConstants.brandingLogoUrl;
+  docsUrl = UrlConstants.docsUrl;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
