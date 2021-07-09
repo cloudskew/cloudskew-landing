@@ -1,0 +1,31 @@
+.cs-pricing {
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 0px 5px;
+
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-pricing-cta-button {
+    color: white;
+    background-color: #00BBB0;
+    padding: 15px 25px;
+    border-radius: 35px;
+    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cs-pricing-cta-button:hover {
+    background-color: #00C8BE;
+}
+
+.cs-pricing-cta-button:hover, .cs-pricing-cta-button:focus {
+    text-decoration: none;
+}

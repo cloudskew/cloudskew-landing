@@ -7,7 +7,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
-import { PricingTablesComponent } from './components/pricing-tables/pricing-tables.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 import { SamplesComponent } from './components/samples/samples.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
@@ -19,7 +19,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     FooterComponent,
     HeroComponent,
     FeaturesComponent,
-    PricingTablesComponent,
+    PricingComponent,
     AboutComponent,
     TestimonialsComponent,
     SamplesComponent
