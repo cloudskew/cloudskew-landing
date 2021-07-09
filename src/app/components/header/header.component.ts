@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   blogUrl = UrlConstants.blogUrl;
   brandingLogoUrl = UrlConstants.brandingLogoUrl;
   docsUrl = UrlConstants.docsUrl;
+  statusUrl = UrlConstants.statusUrl;
 
   constructor() { }
 
