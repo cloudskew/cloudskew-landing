@@ -20,13 +20,8 @@ stages:
           # The above 'npm install' step does not install the angular cli globally.
           # We can install it globally with 'sudo npm install -g @angular/cli'.
           # However easier to invoke the local copy from the node_modules folder.
-          # Note: We're invoking our own 'npm run' wrapper around 'ng build'. This
-          # is to work around a known OOM issue in npm:
-          # - https://github.com/angular/angular-cli/issues/5618
-          # - https://github.com/nrwl/nx/issues/1110
-          # See the 'angular.json' file for details on the wrapper.
-          - script: npm run build-${{parameters.buildConfiguration}}
-            displayName: npm run build-${{parameters.buildConfiguration}}
+          - script: ./node_modules/@angular/cli/bin/ng build -c ${{parameters.buildConfiguration}}
+            displayName: ng build -c ${{parameters.buildConfiguration}}
           # Publish the pipeline artifact
           - task: PublishPipelineArtifact@1
             displayName: publish artifact
