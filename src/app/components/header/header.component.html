@@ -4,7 +4,7 @@
     <div class="cs-header-branding">
         <!-- branding logo -->
         <div class="cs-header-branding-logo">
-            <a href="/">
+            <a href="#">
                 <img [src]="this.brandingLogoUrl" title="CloudSkew">
             </a>
         </div>
@@ -12,15 +12,15 @@
         <div class="cs-header-branding-text">CloudSkew</div>
     </div>
 
-    <!-- nav / links section -->
+    <!-- nav / links section (desktop only) -->
     <div class="cs-header-nav">
-        <div class="cs-header-nav-link">Samples</div>
-        <div class="cs-header-nav-link">Pricing</div>
-        <div class="cs-header-nav-link">Docs</div>
-        <div class="cs-header-nav-link">Status</div>
-        <div class="cs-header-nav-link">Blog</div>
-        <div class="cs-header-nav-link">About</div>
-        <div class="cs-header-nav-link cs-cta-button">Go To App</div>
+        <a class="cs-header-nav-link" href="#samples">Samples</a>
+        <a class="cs-header-nav-link" href="#pricing">Pricing</a>
+        <a class="cs-header-nav-link" [href]="this.docsUrl" target="_blank">Docs</a>
+        <a class="cs-header-nav-link" [href]="this.blogUrl" target="_blank">Blog</a>
+        <a class="cs-header-nav-link" [href]="this.statusUrl" target="_blank">Status</a>
+        <a class="cs-header-nav-link" href="#about">About</a>
+        <a class="cs-header-nav-link cs-cta-button" [href]="this.appUrl" target="_blank">Go To App</a>
     </div>
 
 </div>

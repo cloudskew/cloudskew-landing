@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
-import { CustomerTestimonialsComponent } from './components/customer-testimonials/customer-testimonials.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { PricingTablesComponent } from './components/pricing-tables/pricing-tables.component';
+import { SamplesComponent } from './components/samples/samples.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 @NgModule({
@@ -21,12 +21,12 @@ import { PricingTablesComponent } from './components/pricing-tables/pricing-tabl
     FeaturesComponent,
     PricingTablesComponent,
     AboutComponent,
-    CustomerTestimonialsComponent
+    TestimonialsComponent,
+    SamplesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

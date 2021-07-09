@@ -1,10 +1,10 @@
 /* mobile layout */
-@media screen and (max-width: 600px) { /* @todo: choose correct screen resolution later */
-    .header {
-        display: flex;
-        justify-content: space-between;
+@media screen and (max-width: 980px) {
+    .cs-header {
         width: 100vw;
-        background-color: lightgreen;
-        margin: auto;
+    }
+
+    .cs-header-nav {
+        display: none;
     }
 }
