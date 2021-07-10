@@ -49,6 +49,7 @@
 }
 
 .cs-pricing-table-header {
+    /* layout */
     border: 1px solid #00BBB0;
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
@@ -59,22 +60,31 @@
 }
 
 .cs-pricing-table-header-title {
+    /* layout */
     display: block;
+    margin-bottom: 10px;
+
+    /* text styling */
     color: #647E7D;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .cs-pricing-table-header-price {
+    /* layout */
     display: block;
+    margin-bottom: 10px;
+
+    /* text styling */
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .cs-pricing-table-header-subtitle {
+    /* layout */
     display: block;
+
+    /* text styling */
     font-size: 12px;
     font-weight: 300;
 }
@@ -89,8 +99,24 @@
 .cs-pricing-table-features-row {
     /* flex container */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+
+    /* layout */
+    margin-bottom: 15px;
+}
+
+.cs-pricing-table-features-row-checkbox {
+    /* layout */
+    margin-right: 10px;
+}
+
+.cs-pricing-table-features-row-featureText {
+    /* layout */
+    margin-right: 10px;
+
+    /* text styling */
+    font-size: 16px;
 }
 
 .cs-pricing-cta-button {
@@ -119,7 +145,7 @@
 
 .cs-pricing-more-details {
     /* text styling */
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
