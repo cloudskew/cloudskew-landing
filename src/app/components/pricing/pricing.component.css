@@ -79,14 +79,14 @@
     font-weight: 300;
 }
 
-.cs-pricing-table-content {
+.cs-pricing-table-features {
     /* layout */
     border: 1px solid #00BBB0;
     border-radius: 0px 0px 5px 5px;
     padding: 20px;
 }
 
-.cs-pricing-table-content-row {
+.cs-pricing-table-features-row {
     /* flex container */
     display: flex;
     justify-content: space-between;

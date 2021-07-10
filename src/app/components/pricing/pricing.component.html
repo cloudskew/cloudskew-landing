@@ -13,9 +13,9 @@
                     <span class="cs-pricing-table-header-price">{{plan.price}}</span>
                     <span class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</span>
                 </div>
-                <!-- table content -->
-                <div class="cs-pricing-table-content">
-                    <div class="cs-pricing-table-content-row" *ngFor="let feature of plan.features">
+                <!-- table features/content -->
+                <div class="cs-pricing-table-features">
+                    <div class="cs-pricing-table-features-row" *ngFor="let feature of plan.features">
                         <div>{{feature.featureText}}</div>
                     </div>
                 </div>
