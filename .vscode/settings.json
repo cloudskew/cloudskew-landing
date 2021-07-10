@@ -15,5 +15,11 @@
         "titleBar.inactiveBackground": "#29133299",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.remoteColor": "#291332"
+    "peacock.remoteColor": "#291332",
+    "cSpell.words": [
+        "cloudskew",
+        "devkit",
+        "kubernetes",
+        "preconnect"
+    ]
 }
