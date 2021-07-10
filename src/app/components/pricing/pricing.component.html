@@ -1,15 +1,38 @@
 <div class="cs-pricing" id="pricing">
     <!-- title & subtitle -->
-    <span class="cs-pricing-item cs-pricing-title">CloudSkew's affordably priced plans</span>
+    <span class="cs-pricing-title">CloudSkew plans</span>
 
     <!-- pricing tables -->
-    <div class="cs-pricing-item cs-pricing-tables">Tables</div>
+    <div class="cs-pricing-tables">
+        <!-- individual pricing table -->
+        <div class="cs-pricing-table-wrapper" *ngFor="let plan of this.pricingPlans">
+            <div class="cs-pricing-table">
+                <!-- table "header" -->
+                <div class="cs-pricing-table-header">
+                    <span class="cs-pricing-table-header-title">{{plan.title}}</span>
+                    <span class="cs-pricing-table-header-price">{{plan.price}}</span>
+                    <span class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</span>
+                </div>
+                <!-- table features/content -->
+                <div class="cs-pricing-table-features">
+                    <div class="cs-pricing-table-features-row" *ngFor="let feature of plan.features">
+                        <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon">
+                        <div class="cs-pricing-table-features-row-featureText">{{feature.featureText}}</div>
+                        <img class="cs-pricing-table-features-row-featureContext" *ngIf="feature.featureContext"
+                            [src]="feature.featureContextIcon" [title]="feature.featureContext">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CTA button -->
-    <a class="cs-pricing-item cs-pricing-cta-button" [href]="this.appUrl" target="_blank">Start for Free</a>
+    <a class="cs-pricing-cta-button" [href]="this.appUrl" target="_blank">Start for Free</a>
+    <!-- needed since button above is an inline/inline-block element -->
+    <br>
 
     <!-- additional details -->
-    <span class="cs-pricing-item cs-pricing-more-details">For more details, please see our <a href=""
-            target="_blank">FAQs</a>, <a href="" target="">Terms of Service</a>, and <a href="" target="">Privacy
+    <span class="cs-pricing-more-details">For more details, please see our <a href="" target="_blank">FAQs</a>, <a
+            href="" target="">Terms of Service</a>, and <a href="" target="">Privacy
             Policy</a>.</span>
 </div>

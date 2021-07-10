@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UrlConstants } from 'src/app/constants/urlConstants';
+import { PricingTable } from './pricingTable';
 
 @Component({
   selector: 'app-pricing',
@@ -10,6 +11,89 @@ export class PricingComponent implements OnInit {
 
   //
   appUrl = UrlConstants.appUrl;
+
+  pricingPlans: PricingTable[] = [
+    // free plan details
+    {
+      title: "Free",
+      price: "$0",
+      subtitle: "Free forever",
+      features: [
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "3 diagrams",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "3 templates",
+          featureContext: "Create up to 3 reusable diagram templates",
+          featureContextIcon: "../../../assets/info-icon-black.svg",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Standard support",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Infinite canvas size",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Autosaved to cloud",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Built-in document editor",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Print, export, share",
+        },
+      ],
+    },
+
+    // professional plan details
+    {
+      title: "Professional",
+      price: "$36 / year",
+      subtitle: "Limited time offer",
+      features: [
+        {
+          checkboxIcon: "../../../assets/check-icon-green.svg",
+          featureText: "Unlimited diagrams",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-green.svg",
+          featureText: "Unlimited templates",
+          featureContext: "Create as many reusable diagram templates as needed",
+          featureContextIcon: "../../../assets/info-icon-green.svg",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-green.svg",
+          featureText: "Priority support",
+          featureContext: "24 hr response time for support requests",
+          featureContextIcon: "../../../assets/info-icon-green.svg",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Infinite canvas size",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Autosaved to cloud",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Built-in document editor",
+        },
+        {
+          checkboxIcon: "../../../assets/check-icon-black.svg",
+          featureText: "Print, export, share",
+        },
+      ],
+    },
+  ];
+
 
   constructor() { }
 
