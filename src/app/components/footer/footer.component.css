@@ -6,6 +6,7 @@
 
     /* text styling */
     font-family: "Open Sans",sans-serif;
+    color: black;
 
     /* flex container */
     display: flex;

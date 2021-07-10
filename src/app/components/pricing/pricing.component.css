@@ -1,31 +1,54 @@
 .cs-pricing {
+    /* layout */
     width: 80vw;
     margin: auto; /* for horizontal centering */
     padding: 0px 5px;
 
+    /* text styling */
+    font-family: "Open Sans",sans-serif;
+    color: black;
+
     /* flex container */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.cs-pricing-item {
+    /* flex item */
+    margin-bottom: 35px; /* to keep some vertical spacing between the flex items */
+} 
+
+.cs-pricing-title {
+
+}
+
 .cs-pricing-cta-button {
-    color: white;
     background-color: #00BBB0;
+
+    /* layout */
     padding: 15px 25px;
     border-radius: 35px;
-    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
-    font-family: "Open Sans",sans-serif;
+
+    /* text styling */
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-}
-
-.cs-pricing-cta-button:hover {
-    background-color: #00C8BE;
+    color: black;
+    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
 .cs-pricing-cta-button:hover, .cs-pricing-cta-button:focus {
+    background-color: #00C8BE;
     text-decoration: none;
+}
+
+.cs-pricing-more-details a {
+    color:black;
+    text-decoration: none;
+}
+
+.cs-pricing-more-details a:hover, .cs-pricing-more-details a:focus {
+    text-decoration: underline;
 }
