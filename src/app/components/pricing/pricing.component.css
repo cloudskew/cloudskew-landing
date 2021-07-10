@@ -80,9 +80,17 @@
 }
 
 .cs-pricing-table-content {
+    /* layout */
     border: 1px solid #00BBB0;
     border-radius: 0px 0px 5px 5px;
     padding: 20px;
+}
+
+.cs-pricing-table-content-row {
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cs-pricing-cta-button {
