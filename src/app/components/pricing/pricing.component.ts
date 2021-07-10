@@ -17,7 +17,7 @@ export class PricingComponent implements OnInit {
     {
       title: "Free",
       price: "$0",
-      subtitle: "(Free Forever)",
+      subtitle: "Free forever",
       features: [
         {
           featureText: "3 diagrams",
@@ -47,8 +47,8 @@ export class PricingComponent implements OnInit {
     // professional plan details
     {
       title: "Professional",
-      price: "$36 / Year",
-      subtitle: "(Limited Time Offer)",
+      price: "$36 / year",
+      subtitle: "Limited time offer",
       features: [
         {
           featureText: "Unlimited diagrams",

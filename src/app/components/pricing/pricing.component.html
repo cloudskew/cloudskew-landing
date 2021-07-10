@@ -1,24 +1,35 @@
 <div class="cs-pricing" id="pricing">
     <!-- title & subtitle -->
-    <span class="cs-pricing-item cs-pricing-title">CloudSkew plans</span>
+    <span class="cs-pricing-title">CloudSkew plans</span>
 
     <!-- pricing tables -->
-    <div class="cs-pricing-item cs-pricing-tables">
-        <div class="cs-pricing-table" *ngFor="let plan of this.pricingPlans">
-            <div>{{plan.title}}</div>
-            <div>{{plan.price}}</div>
-            <div>{{plan.subtitle}}</div>
-            <div *ngFor="let feature of plan.features">
-                <div>{{feature.featureText}}</div>
+    <div class="cs-pricing-tables">
+        <!-- individual pricing table -->
+        <div class="cs-pricing-table-wrapper" *ngFor="let plan of this.pricingPlans">
+            <div class="cs-pricing-table">
+                <!-- table "header" -->
+                <div class="cs-pricing-table-header">
+                    <span class="cs-pricing-table-header-title">{{plan.title}}</span>
+                    <span class="cs-pricing-table-header-price">{{plan.price}}</span>
+                    <span class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</span>
+                </div>
+                <!-- table content -->
+                <div class="cs-pricing-table-content">
+                    <div *ngFor="let feature of plan.features">
+                        <div>{{feature.featureText}}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- CTA button -->
-    <a class="cs-pricing-item cs-pricing-cta-button" [href]="this.appUrl" target="_blank">Start for Free</a>
+    <a class="cs-pricing-cta-button" [href]="this.appUrl" target="_blank">Start for Free</a>
+    <!-- needed since button above is an inline/inline-block element -->
+    <br>
 
     <!-- additional details -->
-    <span class="cs-pricing-item cs-pricing-more-details">For more details, please see our <a href=""
-            target="_blank">FAQs</a>, <a href="" target="">Terms of Service</a>, and <a href="" target="">Privacy
+    <span class="cs-pricing-more-details">For more details, please see our <a href="" target="_blank">FAQs</a>, <a
+            href="" target="">Terms of Service</a>, and <a href="" target="">Privacy
             Policy</a>.</span>
 </div>
