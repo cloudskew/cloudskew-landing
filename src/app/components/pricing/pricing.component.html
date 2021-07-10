@@ -1,9 +1,18 @@
 <div class="cs-pricing" id="pricing">
     <!-- title & subtitle -->
-    <span class="cs-pricing-item cs-pricing-title">CloudSkew's affordably priced plans</span>
+    <span class="cs-pricing-item cs-pricing-title">CloudSkew plans</span>
 
     <!-- pricing tables -->
-    <div class="cs-pricing-item cs-pricing-tables">Tables</div>
+    <div class="cs-pricing-item cs-pricing-tables">
+        <div class="cs-pricing-table" *ngFor="let plan of this.pricingPlans">
+            <div>{{plan.title}}</div>
+            <div>{{plan.price}}</div>
+            <div>{{plan.subtitle}}</div>
+            <div *ngFor="let feature of plan.features">
+                <div>{{feature.featureText}}</div>
+            </div>
+        </div>
+    </div>
 
     <!-- CTA button -->
     <a class="cs-pricing-item cs-pricing-cta-button" [href]="this.appUrl" target="_blank">Start for Free</a>

@@ -18,7 +18,7 @@
 .cs-pricing-item {
     /* flex item */
     margin-bottom: 35px; /* to keep some vertical spacing between the flex items */
-} 
+}
 
 .cs-pricing-title {
     /* layout */
@@ -27,6 +27,21 @@
     /* text styling */
     font-size: 45px;
     font-weight: 700;
+    line-height: 1;
+}
+
+.cs-pricing-tables {
+    /* flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-pricing-table {
+    /* flex item */
+    background-color: #F9F9F9;
+    border: 1px solid #DEDDDD;
 }
 
 .cs-pricing-cta-button {
