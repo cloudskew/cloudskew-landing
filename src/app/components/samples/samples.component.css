@@ -1,3 +1,66 @@
 .cs-samples {
-    height: 600px; /* @todo: for testing only, remove later */
+    /* layout */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 0px 5px;
+
+    /* text styling */
+    font-family: "Open Sans",sans-serif;
+    color: var(--color-secondary);
+    line-height: 1;
+    text-align: center;
+}
+
+.cs-samples-title {
+    /* layout */
+    display: block;
+    margin-bottom: 35px;
+
+    /* text styling */
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--size-section-title);
+    font-weight: var(--weight-section-title);
+}
+
+.cs-samples-gallery {
+    /* layout */
+    margin-bottom: 35px;
+
+    /* flex container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-samples-gallery-item {
+    /* flex item */
+    background-color: var(--color-primary-dark);
+
+    /* flex item, layout */
+    border: 1px solid #DEDDDD;
+    border-radius: 5px;
+    margin: 10px 25px; /* 10px vertical separation between flex items when wrapped */
+    padding: 30px;
+    flex-basis: 50%; /* @todo */
+}
+
+.cs-samples-gallery-item-header {
+    /* flex container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-samples-gallery-item-header-title {
+    /* flex item, layout */
+    display: block;
+}
+
+.cs-samples-gallery-item-description {
+    /* layout */
+    display: block;
+
+    text-align: left; /* @todo */
 }

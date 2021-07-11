@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 :root {
     /* color palette */
@@ -13,7 +13,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --color-accent-light: #00C8BE;
 
     /* text styling */
-    --size-section-title: 45px;
-    --weight-section-title: 700;
+    --size-section-title: 40px;
+    --weight-section-title: 400;
 }
 

@@ -1,2 +1,22 @@
 <div class="cs-samples" id="samples">
+
+    <!-- section title -->
+    <span class="cs-samples-title">Check out some samples</span>
+
+    <div class="cs-samples-gallery">
+        <!-- gallery item -->
+        <div class="cs-samples-gallery-item" *ngFor="let galleryItem of this.galleryItems">
+            <!-- header -->
+            <div class="cs-samples-gallery-item-header">
+                <span class="cs-samples-gallery-item-header-title">{{galleryItem.title}}</span>
+                <a class="cs-samples-gallery-item-header-link">See it live</a>
+            </div>
+            <!-- sub-header -->
+            <span class="cs-samples-gallery-item-description">{{galleryItem.description}}</span>
+            <!-- image -->
+            <img class="cs-samples-gallery-item-content">
+
+        </div>
+    </div>
+
 </div>
