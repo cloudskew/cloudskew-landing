@@ -2,3 +2,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    /* color palette */
+    --color-primary: white;
+    --color-primary-dark: #F9F9F9;
+    --color-secondary: black;
+    --color-secondary-light: #647E7D;
+    --color-accent: #00BBB0;
+    --color-accent-light: #00C8BE;
+
+    /* text styling */
+    --size-section-title: 45px;
+    --weight-section-title: 700;
+}
+
