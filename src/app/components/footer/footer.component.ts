@@ -8,7 +8,7 @@ import { UrlConstants } from 'src/app/constants/urlConstants';
 })
 export class FooterComponent implements OnInit {
 
-  //
+  // urls
   appUrl = UrlConstants.appUrl;
   blogUrl = UrlConstants.blogUrl;
   brandingLogoUrl = UrlConstants.brandingLogoUrl;
@@ -16,6 +16,13 @@ export class FooterComponent implements OnInit {
   privacyPolicyUrl = UrlConstants.privacyPolicyUrl;
   statusUrl = UrlConstants.statusUrl;
   termsOfServiceUrl = UrlConstants.termsOfServiceUrl;
+
+  // alt texts & titles for <img> tags
+  emailText = "support@cloudskew.com";
+  githubText = "Report an issue on Github";
+  twitterText = "Twitter";
+  youtubeText = "YouTube";
+
 
   constructor() { }
 

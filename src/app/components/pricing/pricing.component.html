@@ -16,10 +16,12 @@
                 <!-- table features/content -->
                 <div class="cs-pricing-table-features">
                     <div class="cs-pricing-table-features-row" *ngFor="let feature of plan.features">
-                        <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon">
+                        <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
+                            [alt]="feature.featureText">
                         <div class="cs-pricing-table-features-row-featureText">{{feature.featureText}}</div>
                         <img class="cs-pricing-table-features-row-featureContext" *ngIf="feature.featureContext"
-                            [src]="feature.featureContextIcon" [title]="feature.featureContext">
+                            [src]="feature.featureContextIcon" [title]="feature.featureContext"
+                            [alt]="feature.featureContext">
                     </div>
                 </div>
             </div>

@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   brandingLogoUrl = UrlConstants.brandingLogoUrl;
   docsUrl = UrlConstants.docsUrl;
   statusUrl = UrlConstants.statusUrl;
+  title = "CloudSkew";
 
   constructor() { }
 
