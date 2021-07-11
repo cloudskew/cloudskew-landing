@@ -11,6 +11,9 @@ export class PricingComponent implements OnInit {
 
   //
   appUrl = UrlConstants.appUrl;
+  faqsUrl = UrlConstants.faqsUrl;
+  termOfServiceUrl = UrlConstants.termsOfServiceUrl;
+  privacyPolicyUrl = UrlConstants.privacyPolicyUrl;
 
   pricingPlans: PricingTable[] = [
     // free plan details

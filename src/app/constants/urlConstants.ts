@@ -6,6 +6,7 @@ export class UrlConstants {
     public static readonly blogUrl = environment.blogUrl;
     public static readonly brandingLogoUrl = `${environment.cdnUrlPrefix}/assets/logos/cloudskew-logo.png`
     public static readonly docsUrl = environment.docsUrl;
+    public static readonly faqsUrl = `${environment.docsUrl}/docs/frequently-asked-questions.html`;
     public static readonly privacyPolicyUrl = `${environment.docsUrl}/about/privacy-policy.html`;
     public static readonly statusUrl = `${environment.docsUrl}/status/current-status.html`;
     public static readonly termsOfServiceUrl = `${environment.docsUrl}/about/terms-of-service.html`;
