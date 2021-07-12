@@ -1,3 +1,92 @@
 .cs-about {
-    height: 600px;/* @todo: for testing only, remove later */
+    background-color: beige; /* @todo */
+
+    /* layout */
+    height: 350px;
+
+    /* flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cs-about-pic {
+    /* layout */
+    margin-right: 30px;
+
+    /* display: block; */
+    background-color: lightcyan;
+
+    /* flex-basis: 15%; */
+    width: 10%;
+    height: auto;
+}
+
+.cs-about-profile {
+    /* flex item: layout */
+    /* flex-basis: 35%; */
+    /* flex-grow: 1; */
+    padding: 35px;
+    background-color: lightskyblue;
+
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cs-about-profile-item {
+    /* layout */
+    margin-bottom: 20px;
+}
+
+.cs-about-profile-quote {
+    background-color: aliceblue;  /* @todo */
+
+    /* layout */
+    padding: 30px;
+    margin-right: 30px;
+
+    /* text styling */
+    font-family: var(--font-family-open-sans);
+    font-size: 30px;
+    /* flex-basis: 50%; */
+    text-align: center;
+    color: var(--color-secondary-light)
+}
+
+.cs-about-profile-name {
+    /* text styling */
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cs-about-profile-title {
+    /* text styling */
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cs-about-profile-description {
+    /* text styling */
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.cs-about-profile-social-bar {
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-about-profile-social-bar-link {
+    /* layout */
+    margin-right: 20px;
 }

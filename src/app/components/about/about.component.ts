@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  //
+  missionStatement = `"My mission is to empower users to do their best work"`;
+  name = 'Mithun Shanbhag';
+  title = 'CEO - Skewed Ventures';
+  linkedinUrl = 'https://www.linkedin.com/in/mithunshanbhag/';
+  twitterUrl = 'https://twitter.com/MithunShanbhag';
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
