@@ -1,27 +1,3 @@
-.cs-pricing {
-    /* layout */
-    width: 80vw;
-    margin: auto; /* for horizontal centering */
-    padding: 0px 5px;
-
-    /* text styling */
-    font-family: "Open Sans",sans-serif;
-    color: var(--color-secondary);
-    line-height: 1;
-    text-align: center;
-}
-
-.cs-pricing-title {
-    /* layout */
-    display: block;
-    margin-bottom: 35px;
-
-    /* text styling */
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--size-section-title);
-    font-weight: var(--weight-section-title);
-}
-
 .cs-pricing-tables {
     /* layout */
     margin-bottom: 35px;

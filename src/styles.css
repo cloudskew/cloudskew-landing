@@ -17,3 +17,26 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --weight-section-title: 400;
 }
 
+.cs-section {
+    /* layout */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 0px 5px;
+
+    /* text styling */
+    font-family: "Open Sans",sans-serif;
+    color: var(--color-secondary);
+    line-height: 1;
+    text-align: center;
+}
+
+.cs-section-title { /* Use on <span> elements only */
+    /* layout */
+    display: block;
+    margin-bottom: 35px;
+
+    /* text styling */
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--size-section-title);
+    font-weight: var(--weight-section-title);
+}
