@@ -85,6 +85,9 @@
 .cs-pricing-table-features-row-checkbox {
     /* layout */
     margin-right: 10px;
+
+    /* text styling */
+    font-size: 14px;
 }
 
 .cs-pricing-table-features-row-featureText {
@@ -92,7 +95,12 @@
     margin-right: 10px;
 
     /* text styling */
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.cs-pricing-table-features-row-featureContext {
+    /* text styling */
+    font-size: 14px;
 }
 
 .cs-pricing-cta-button {
@@ -134,16 +142,4 @@
 .cs-pricing-more-details a:hover, .cs-pricing-more-details a:focus {
     /* text styling */
     text-decoration: underline;
-}
-
-@media screen and (max-width: 1200px) {
-    .cs-pricing {
-        width: 90vw;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .cs-pricing {
-        width: 100vw;
-    }
 }
