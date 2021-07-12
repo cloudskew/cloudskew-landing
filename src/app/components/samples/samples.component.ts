@@ -13,10 +13,10 @@ export class SamplesComponent implements OnInit {
   // @todo
   galleryItems: GalleryItem[] = [
     {
-      title: 'Kubernetes',
-      description: 'Kubernetes resource map',
-      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/kubernetes-resource-map.png`,
-      shareUrl: 'https://app.cloudskew.com/viewer/0610ccbc-c6b6-4167-9fa9-2903a513da08',
+      title: 'Alibaba Cloud',
+      description: 'Video on demand solution',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/alibaba-elearning-vod-solution.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/4c67e28b-5991-48e1-ab3c-eb9ace54292e',
     },
     {
       title: 'AWS',
@@ -37,10 +37,10 @@ export class SamplesComponent implements OnInit {
       shareUrl: 'https://app.cloudskew.com/viewer/af9976e8-a302-4451-b0e2-d048a76424fa',
     },
     {
-      title: 'Alibaba Cloud',
-      description: 'Video on demand solution',
-      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/alibaba-elearning-vod-solution.png`,
-      shareUrl: 'https://app.cloudskew.com/viewer/4c67e28b-5991-48e1-ab3c-eb9ace54292e',
+      title: 'Kubernetes',
+      description: 'Kubernetes resource map',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/kubernetes-resource-map.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/0610ccbc-c6b6-4167-9fa9-2903a513da08',
     },
     {
       title: 'Oracle Cloud (OCI)',

@@ -16,12 +16,15 @@
     /* flex item, layout */
     border: 1px solid #DEDDDD;
     border-radius: 5px;
-    margin: 10px 25px; /* 10px vertical separation between flex items when wrapped */
+    margin: 20px; /* 20px vertical separation between flex items when wrapped */
     padding: 30px;
-    flex-basis: 50%; /* @todo */
+    flex-basis: 35%; /* this is to ensure that we get max two flex-items per row */
 }
 
 .cs-samples-gallery-item-header {
+    /* layout */
+    margin-bottom: 15px;
+
     /* flex container */
     display: flex;
     flex-wrap: wrap;
@@ -30,13 +33,61 @@
 }
 
 .cs-samples-gallery-item-header-title {
-    /* flex item, layout */
-    display: block;
+    /* text styling */
+    text-align: left;
+    font-family: var(--font-family-montserrat);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-secondary-light);
+}
+
+.cs-samples-gallery-item-header-sharelink {
+    /* text styling */
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.cs-samples-gallery-item-header-sharelink:hover, .cs-samples-gallery-item-header-sharelink:focus {
+    /* text styling */
+    color: var(--color-accent-light);
+    text-decoration: underline;
 }
 
 .cs-samples-gallery-item-description {
     /* layout */
     display: block;
+    margin-bottom: 25px;
 
-    text-align: left; /* @todo */
+    /* text styling */
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.cs-samples-gallery-item-image img {
+    /* layout */
+    width: 100%; /* 100% of parent container */
+    height: auto;
+    border: 1px solid #DEDDDD;
+
+    /* styling */
+    box-shadow: 10px 10px 10px var(--color-secondary-light);
+}
+
+.cs-samples-gallery-item-image img:hover {
+    /* styling */
+    box-shadow: 15px 15px 10px var(--color-secondary-light);
+}
+
+@media screen and (max-width: 980px) {
+    /* Better to hide the 'see live' link at lower resolutions for the following reasons:border:
+       1. Messes up the landing page display on mobile.
+       2. The diagram viewer doesn't render well at lower resolutions.
+    */
+    .cs-samples-gallery-item-header-sharelink {
+        display: none;
+    }
 }

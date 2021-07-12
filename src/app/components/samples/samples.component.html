@@ -6,15 +6,25 @@
     <div class="cs-samples-gallery">
         <!-- gallery item -->
         <div class="cs-samples-gallery-item" *ngFor="let galleryItem of this.galleryItems">
+
             <!-- header -->
             <div class="cs-samples-gallery-item-header">
+                <!-- title -->
                 <span class="cs-samples-gallery-item-header-title">{{galleryItem.title}}</span>
-                <a class="cs-samples-gallery-item-header-link">See it live</a>
+                <!-- share link -->
+                <a class="cs-samples-gallery-item-header-sharelink" [href]="this.galleryItem.shareUrl" target="_blank"
+                    rel="noopener noreferrer">See Live</a>
             </div>
-            <!-- sub-header -->
+
+            <!-- description -->
             <span class="cs-samples-gallery-item-description">{{galleryItem.description}}</span>
+
             <!-- image -->
-            <img class="cs-samples-gallery-item-content">
+            <a class="cs-samples-gallery-item-image" [href]="this.galleryItem.imgUrl" target="_blank"
+                rel="noopener noreferrer">
+                <img [src]="this.galleryItem.imgUrl" [title]="this.galleryItem.description"
+                    [alt]="this.galleryItem.description">
+            </a>
 
         </div>
     </div>
