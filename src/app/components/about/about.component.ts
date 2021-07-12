@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  //
+  quote = '"Put an arbitrarily long sentence or quote here!"';
+  name = 'Mithun Shanbhag';
+  title = 'Skewed Ventures | Ex-Microsoft';
+  linkedinUrl = 'https://www.linkedin.com/in/mithunshanbhag/';
+  twitterUrl = 'https://twitter.com/MithunShanbhag';
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

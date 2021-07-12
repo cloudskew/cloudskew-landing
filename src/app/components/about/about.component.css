@@ -1,3 +1,77 @@
 .cs-about {
-    height: 600px;/* @todo: for testing only, remove later */
+    /* flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+.cs-about-item {
+    margin: 10px; /* 10px horizontal and vertical separation (when wrapped at smaller resolutions) */
+}
+
+.cs-about-quote {
+    /* text styling */
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-montserrat);
+    font-size: 40px;
+    text-align: center;
+}
+
+.cs-about-pic {
+    /* layout */
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cs-about-profile {
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-about-profile-item {
+    /* layout */
+    margin-bottom: 15px;
+}
+
+.cs-about-profile-name {
+    /* text styling */
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 700;
+    white-space: nowrap; /* to prevent wrapping at lower screen resolutions */
+}
+
+.cs-about-profile-title {
+    /* text styling */
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap; /* to prevent wrapping at lower screen resolutions */
+}
+
+.cs-about-profile-social-bar {
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-about-profile-social-bar-link {
+    /* layout */
+    margin: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .cs-about {
+        flex-wrap: wrap;
+    }
+
+    .cs-about-pic {
+        display: none;
+    }
 }
