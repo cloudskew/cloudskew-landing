@@ -14,7 +14,7 @@
     background-color: var(--color-primary-dark);
 
     /* flex item, layout */
-    border: 1px solid #DEDDDD;
+    /* border: 1px solid #DEDDDD; */ /* @todo: commented out for A/B testing */
     border-radius: 5px;
     margin: 10px 25px; /* 10px vertical separation between flex items when wrapped */
     padding: 30px;
@@ -26,7 +26,8 @@
 
 .cs-pricing-table-header {
     /* layout */
-    border: 1px solid var(--color-accent);
+    /* border: 1px solid var(--color-accent); */ /* @todo: commented out for A/B testing */
+    /* border: 1px solid #DEDDDD; */ /* @todo: commented out for A/B testing */
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
     padding: 20px;
@@ -37,7 +38,6 @@
 
 .cs-pricing-table-header-title {
     /* layout */
-    display: block;
     margin-bottom: 10px;
 
     /* text styling */
@@ -48,7 +48,6 @@
 
 .cs-pricing-table-header-price {
     /* layout */
-    display: block;
     margin-bottom: 10px;
 
     /* text styling */
@@ -57,9 +56,6 @@
 }
 
 .cs-pricing-table-header-subtitle {
-    /* layout */
-    display: block;
-
     /* text styling */
     font-size: 12px;
     font-weight: 300;
@@ -67,7 +63,7 @@
 
 .cs-pricing-table-features {
     /* layout */
-    border: 1px solid var(--color-accent);
+    /* border: 1px solid var(--color-accent); */ /* @todo: commented out for A/B testing */
     border-radius: 0px 0px 5px 5px;
     padding: 20px;
 }
@@ -96,6 +92,7 @@
 
     /* text styling */
     font-size: 14px;
+    white-space: nowrap; /* to prevent text from wrapping at lesser screen resolutions */
 }
 
 .cs-pricing-table-features-row-featureContext {

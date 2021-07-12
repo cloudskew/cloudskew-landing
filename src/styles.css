@@ -22,7 +22,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     /* layout */
     width: 80vw;
     margin: auto; /* for horizontal centering */
-    padding: 0px 5px;
+    padding: 100px 5px;
 
     /* text styling */
     font-family: var(--font-family-open-sans);

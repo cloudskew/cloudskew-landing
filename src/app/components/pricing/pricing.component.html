@@ -9,16 +9,16 @@
             <div class="cs-pricing-table">
                 <!-- table "header" -->
                 <div class="cs-pricing-table-header">
-                    <span class="cs-pricing-table-header-title">{{plan.title}}</span>
-                    <span class="cs-pricing-table-header-price">{{plan.price}}</span>
-                    <span class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</span>
+                    <div class="cs-pricing-table-header-title">{{plan.title}}</div>
+                    <div class="cs-pricing-table-header-price">{{plan.price}}</div>
+                    <div class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</div>
                 </div>
                 <!-- table features/content -->
                 <div class="cs-pricing-table-features">
                     <div class="cs-pricing-table-features-row" *ngFor="let feature of plan.features">
                         <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
                             [alt]="feature.featureText">
-                        <div class="cs-pricing-table-features-row-featureText">{{feature.featureText}}</div>
+                        <span class="cs-pricing-table-features-row-featureText">{{feature.featureText}}</span>
                         <img class="cs-pricing-table-features-row-featureContext" *ngIf="feature.featureContext"
                             [src]="feature.featureContextIcon" [title]="feature.featureContext"
                             [alt]="feature.featureContext">
