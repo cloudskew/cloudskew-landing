@@ -1,60 +1,41 @@
 .cs-about {
-    background-color: beige; /* @todo */
-
-    /* layout */
-    height: 350px;
-
     /* flex container */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+}
+
+.cs-about-item {
+    margin: 10px; /* 10px horizontal and vertical separation (when wrapped at smaller resolutions) */
+}
+
+.cs-about-quote {
+    /* text styling */
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-montserrat);
+    font-size: 40px;
+    text-align: center;
 }
 
 .cs-about-pic {
     /* layout */
-    margin-right: 30px;
-
-    /* display: block; */
-    background-color: lightcyan;
-
-    /* flex-basis: 15%; */
-    width: 10%;
+    width: 20%;
     height: auto;
+    border-radius: 5px;
 }
 
 .cs-about-profile {
-    /* flex item: layout */
-    /* flex-basis: 35%; */
-    /* flex-grow: 1; */
-    padding: 35px;
-    background-color: lightskyblue;
-
     /* flex container */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .cs-about-profile-item {
     /* layout */
-    margin-bottom: 20px;
-}
-
-.cs-about-profile-quote {
-    background-color: aliceblue;  /* @todo */
-
-    /* layout */
-    padding: 30px;
-    margin-right: 30px;
-
-    /* text styling */
-    font-family: var(--font-family-open-sans);
-    font-size: 30px;
-    /* flex-basis: 50%; */
-    text-align: center;
-    color: var(--color-secondary-light)
+    margin-bottom: 15px;
 }
 
 .cs-about-profile-name {
@@ -62,21 +43,15 @@
     color: var(--color-secondary);
     font-size: 30px;
     font-weight: 700;
+    white-space: nowrap; /* to prevent wrapping at lower screen resolutions */
 }
 
 .cs-about-profile-title {
     /* text styling */
     color: var(--color-secondary);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-}
-
-.cs-about-profile-description {
-    /* text styling */
-    color: var(--color-secondary);
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
+    white-space: nowrap; /* to prevent wrapping at lower screen resolutions */
 }
 
 .cs-about-profile-social-bar {
@@ -88,5 +63,15 @@
 
 .cs-about-profile-social-bar-link {
     /* layout */
-    margin-right: 20px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .cs-about {
+        flex-wrap: wrap;
+    }
+
+    .cs-about-pic {
+        display: none;
+    }
 }

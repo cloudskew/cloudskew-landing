@@ -1,21 +1,24 @@
 <div class="cs-section" id="about">
     <!-- title -->
-    <span class="cs-section-title">Meet CloudSkew's creator</span>
+    <span class="cs-section-title">Meet the creator</span>
 
     <div class="cs-about">
+
+        <!-- quote -->
+        <div class="cs-about-item cs-about-quote">{{this.quote}}</div>
+
         <!-- developer's pic -->
-        <img class="cs-about-pic" src="../../../assets/profile-pic.png" [alt]="this.name" [title]="this.name">
+        <img class="cs-about-item cs-about-pic" src="../../../assets/profile-pic.png" [alt]="this.name"
+            [title]="this.name">
 
         <!-- developer's profile info -->
-        <div class="cs-about-profile">
-            <!-- quote -->
-            <span class="cs-about-profile-item cs-about-profile-quote">{{this.missionStatement}}</span>
+        <div class="cs-about-item cs-about-profile">
 
             <!-- name & title -->
             <div class="cs-about-profile-item cs-about-profile-name">{{this.name}}</div>
             <div class="cs-about-profile-item cs-about-profile-title">{{this.title}}</div>
 
-            <!-- social bar -->
+            <!-- social links -->
             <div class="cs-about-profile-item cs-about-profile-social-bar">
 
                 <!-- linkedin -->
@@ -31,6 +34,7 @@
 
             </div>
         </div>
+
     </div>
 
 </div>

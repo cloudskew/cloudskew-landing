@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   //
-  missionStatement = `"My mission is to empower users to do their best work"`;
+  quote = '"Put an arbitrarily long sentence or quote here!"';
   name = 'Mithun Shanbhag';
-  title = 'CEO - Skewed Ventures';
+  title = 'Skewed Ventures | Ex-Microsoft';
   linkedinUrl = 'https://www.linkedin.com/in/mithunshanbhag/';
   twitterUrl = 'https://twitter.com/MithunShanbhag';
 
