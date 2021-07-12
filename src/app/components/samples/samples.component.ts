@@ -10,7 +10,7 @@ import { GalleryItem } from './galleryItem';
 })
 export class SamplesComponent implements OnInit {
 
-  // @todo
+  //
   galleryItems: GalleryItem[] = [
     {
       title: 'Alibaba Cloud',
@@ -54,5 +54,4 @@ export class SamplesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
