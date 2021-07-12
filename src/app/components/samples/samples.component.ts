@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UrlConstants } from 'src/app/constants/urlConstants';
+import { environment } from 'src/environments/environment';
 import { GalleryItem } from './galleryItem';
 
 @Component({
@@ -13,38 +15,38 @@ export class SamplesComponent implements OnInit {
     {
       title: 'Kubernetes',
       description: 'Kubernetes resource map',
-      imgUrl: '',
-      shareUrl: '',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/kubernetes-resource-map.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/0610ccbc-c6b6-4167-9fa9-2903a513da08',
     },
     {
       title: 'AWS',
       description: 'Smart products platform',
-      imgUrl: '',
-      shareUrl: '',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/aws-smart-products-platform.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/e21cca59-ada0-48a1-928a-6628042afebf',
     },
     {
       title: 'Azure',
-      description: '',
-      imgUrl: '',
-      shareUrl: '',
+      description: 'Microservices on AKS',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/microservices-on-aks.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/eb335650-d335-463b-bde5-b94af25d042c',
     },
     {
       title: 'GCP',
-      description: '',
-      imgUrl: '',
-      shareUrl: '',
+      description: 'Real-time retail inventory',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/gcp-realtime-retail-inventory.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/af9976e8-a302-4451-b0e2-d048a76424fa',
     },
     {
       title: 'Alibaba Cloud',
-      description: '',
-      imgUrl: '',
-      shareUrl: '',
+      description: 'Video on demand solution',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/alibaba-elearning-vod-solution.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/4c67e28b-5991-48e1-ab3c-eb9ace54292e',
     },
     {
-      title: 'Azure',
-      description: '',
-      imgUrl: '',
-      shareUrl: '',
+      title: 'Oracle Cloud (OCI)',
+      description: 'Migration of on-prem db to OCI',
+      imgUrl: `${environment.cdnUrlPrefix}/assets/samples/oci-onprem-db-migration.png`,
+      shareUrl: 'https://app.cloudskew.com/viewer/0831890b-183d-49ca-9818-57c1af749a3f',
     },
   ];
 
