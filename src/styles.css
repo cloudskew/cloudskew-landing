@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
@@ -13,6 +12,8 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --color-accent-light: #00C8BE;
 
     /* text styling */
+    --font-family-open-sans: "Open Sans", sans-serif;
+    --font-family-montserrat: "Montserrat", sans-serif;
     --size-section-title: 40px;
     --weight-section-title: 400;
 }
@@ -24,7 +25,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     padding: 0px 5px;
 
     /* text styling */
-    font-family: "Open Sans",sans-serif;
+    font-family: var(--font-family-open-sans);
     color: var(--color-secondary);
     line-height: 1;
     text-align: center;
@@ -36,7 +37,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     margin-bottom: 35px;
 
     /* text styling */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family-montserrat);
     font-size: var(--size-section-title);
     font-weight: var(--weight-section-title);
 }
