@@ -41,3 +41,15 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-size: var(--size-section-title);
     font-weight: var(--weight-section-title);
 }
+
+@media screen and (max-width: 1200px) {
+    .cs-section {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cs-section {
+        width: 100vw;
+    }
+}
