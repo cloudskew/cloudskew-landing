@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 :root {
     /* color palette */
@@ -13,7 +12,44 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --color-accent-light: #00C8BE;
 
     /* text styling */
-    --size-section-title: 45px;
-    --weight-section-title: 700;
+    --font-family-open-sans: "Open Sans", sans-serif;
+    --font-family-montserrat: "Montserrat", sans-serif;
+    --size-section-title: 40px;
+    --weight-section-title: 400;
 }
 
+.cs-section {
+    /* layout */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 0px 5px;
+
+    /* text styling */
+    font-family: var(--font-family-open-sans);
+    color: var(--color-secondary);
+    line-height: 1;
+    text-align: center;
+}
+
+.cs-section-title { /* Use on <span> elements only */
+    /* layout */
+    display: block;
+    margin-bottom: 35px;
+
+    /* text styling */
+    font-family: var(--font-family-montserrat);
+    font-size: var(--size-section-title);
+    font-weight: var(--weight-section-title);
+}
+
+@media screen and (max-width: 1200px) {
+    .cs-section {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cs-section {
+        width: 100vw;
+    }
+}

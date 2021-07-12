@@ -5,7 +5,7 @@
     padding: 100px 5px 0px 5px;
 
     /* text styling */
-    font-family: "Open Sans",sans-serif;
+    font-family: var(--font-family-open-sans);
     color: var(--color-secondary);
 
     /* flex container */

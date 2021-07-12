@@ -1,33 +1,9 @@
-.cs-pricing {
-    /* layout */
-    width: 80vw;
-    margin: auto; /* for horizontal centering */
-    padding: 0px 5px;
-
-    /* text styling */
-    font-family: "Open Sans",sans-serif;
-    color: var(--color-secondary);
-    line-height: 1;
-    text-align: center;
-}
-
-.cs-pricing-title {
-    /* layout */
-    display: block;
-    margin-bottom: 35px;
-
-    /* text styling */
-    font-size: var(--size-section-title);
-    font-weight: var(--weight-section-title);
-}
-
 .cs-pricing-tables {
     /* layout */
     margin-bottom: 35px;
 
     /* flex container */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -109,6 +85,9 @@
 .cs-pricing-table-features-row-checkbox {
     /* layout */
     margin-right: 10px;
+
+    /* text styling */
+    font-size: 14px;
 }
 
 .cs-pricing-table-features-row-featureText {
@@ -116,7 +95,12 @@
     margin-right: 10px;
 
     /* text styling */
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.cs-pricing-table-features-row-featureContext {
+    /* text styling */
+    font-size: 14px;
 }
 
 .cs-pricing-cta-button {
@@ -145,7 +129,7 @@
 
 .cs-pricing-more-details {
     /* text styling */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -158,16 +142,4 @@
 .cs-pricing-more-details a:hover, .cs-pricing-more-details a:focus {
     /* text styling */
     text-decoration: underline;
-}
-
-@media screen and (max-width: 1200px) {
-    .cs-pricing {
-        width: 90vw;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .cs-pricing {
-        width: 100vw;
-    }
 }
