@@ -12,7 +12,7 @@ export class TestimonialsComponent implements OnInit {
   testimonialItems: TestimonialItem[] = [
     {
       name: 'Wesley Haakman',
-      job: 'Microsoft Azure MVP',
+      job: 'Microsoft MVP | Lead Architect @ Intercept',
       testimonial: `"I absolutely fell in love with CloudSkew. Things you need are.. just.. there.."`,
       artwork: '../../../assets/triangle-icon.svg',
       liveUrl: 'https://twitter.com/whaakman/status/1370035551231967235',
@@ -26,7 +26,7 @@ export class TestimonialsComponent implements OnInit {
     },
     {
       name: 'Dan Clarke',
-      job: 'Cloud Solution Architect',
+      job: 'Microsoft MVP | Developer @ EverStack',
       testimonial: `"Wow, CloudSkew by @MithunShanbhag is a really nice online diagramming tool with tons of built-in dev icons (Azure, K8S, programming langs, etc, etc)..."`,
       artwork: '../../../assets/plus-icon.svg',
       liveUrl: 'https://twitter.com/dracan/status/1306108161007509504',
