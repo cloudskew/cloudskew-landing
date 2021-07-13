@@ -81,9 +81,6 @@
 .cs-pricing-table-features-row-checkbox {
     /* layout */
     margin-right: 10px;
-
-    /* text styling */
-    font-size: 14px;
 }
 
 .cs-pricing-table-features-row-featureText {
@@ -91,13 +88,7 @@
     margin-right: 10px;
 
     /* text styling */
-    font-size: 14px;
     white-space: nowrap; /* to prevent text from wrapping at lesser screen resolutions */
-}
-
-.cs-pricing-table-features-row-featureContext {
-    /* text styling */
-    font-size: 14px;
 }
 
 .cs-pricing-cta-button {
@@ -110,10 +101,7 @@
     border-radius: 35px;
 
     /* text styling */
-    font-size: 20px;
-    font-weight: 700;
     text-decoration: none;
-    color: var(--color-secondary);
     white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
