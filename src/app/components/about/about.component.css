@@ -12,7 +12,7 @@
 
 .cs-about-quote {
     /* text styling */
-    color: var(--color-secondary-light);
+    color: var(--color-secondary-lighter);
     font-family: var(--font-family-montserrat);
     font-size: 40px;
     text-align: center;

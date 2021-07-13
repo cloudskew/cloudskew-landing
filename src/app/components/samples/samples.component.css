@@ -38,7 +38,7 @@
     font-family: var(--font-family-montserrat);
     font-size: 20px;
     font-weight: 700;
-    color: var(--color-secondary-light);
+    color: var(--color-secondary-lighter);
 }
 
 .cs-samples-gallery-item-header-sharelink {
@@ -74,12 +74,12 @@
     border: 1px solid #DEDDDD;
 
     /* styling */
-    box-shadow: 10px 10px 10px var(--color-secondary-light);
+    box-shadow: 10px 10px 10px var(--color-secondary-lighter);
 }
 
 .cs-samples-gallery-item-image img:hover {
     /* styling */
-    box-shadow: 15px 15px 10px var(--color-secondary-light);
+    box-shadow: 15px 15px 10px var(--color-secondary-lighter);
 }
 
 @media screen and (max-width: 980px) {

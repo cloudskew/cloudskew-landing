@@ -1,3 +1,66 @@
-.cs-testimonials {
-    height: 600px;/* @todo: for testing only, remove later */
+.cs-testimonials-flexbox {
+    /* flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cs-testimonials-card {
+    /* flex item: styling */
+    background-color: var(--color-primary);
+
+    /* flex item: layout */
+    border-radius: 5px;
+    margin: 20px; /* 20px vertical separation between flex items when wrapped */
+    flex-basis: 30%;
+}
+
+.cs-testimonials-card-quote {
+    /* layout */
+    display: block;
+    margin: 30px 0px;
+    padding: 0px 30px;
+    border-left: 5px solid var(--color-accent);
+
+    /* text styling */
+    text-align: left;
+    text-decoration: none; /* remove decoration from links */
+}
+
+.cs-testimonials-card-quote:hover, .cs-testimonials-card-quote:focus {
+    border-left: 5px solid var(--color-accent-light);
+}
+
+.cs-testimonials-card-user-flexbox {
+    /* layout */
+    margin: 30px;
+
+    /* flex container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cs-testimonials-card-user-details {
+    margin-right: 30px;
+}
+
+.cs-testimonials-card-user-details-name {
+    /* layout */
+    margin-bottom: 10px;
+
+    /* text styling */
+    text-align: left;
+}
+
+.cs-testimonials-card-user-details-job {
+    /* text styling */
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .cs-testimonials-card-user-artwork {
+        display: none;
+    }
 }

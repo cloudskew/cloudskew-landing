@@ -7,15 +7,14 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --color-primary: white;
     --color-primary-dark: #F9F9F9;
     --color-secondary: black;
-    --color-secondary-light: #647E7D;
+    --color-secondary-light: #002927;
+    --color-secondary-lighter: #647E7D;
     --color-accent: #00BBB0;
     --color-accent-light: #00C8BE;
 
-    /* text styling */
+    /* font families */
     --font-family-open-sans: "Open Sans", sans-serif;
     --font-family-montserrat: "Montserrat", sans-serif;
-    --size-section-title: 40px;
-    --weight-section-title: 400;
 }
 
 .cs-section {
@@ -38,8 +37,44 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
     /* text styling */
     font-family: var(--font-family-montserrat);
-    font-size: var(--size-section-title);
-    font-weight: var(--weight-section-title);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.bg-color-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-color-primary-dark {
+    background-color: var(--color-primary-dark);
+}
+
+.font-branding {
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-open-sans);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.font-quote {
+    color: var(--color-secondary-lighter);
+    font-family: var(--font-family-montserrat);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.font-primary-content {
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-open-sans);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.font-secondary-content {
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-open-sans);
+    font-size: 18px;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 1200px) {

@@ -41,7 +41,7 @@
     margin-bottom: 10px;
 
     /* text styling */
-    color: var(--color-secondary-light);
+    color: var(--color-secondary-lighter);
     font-size: 30px;
     font-weight: 700;
 }
