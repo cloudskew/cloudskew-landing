@@ -3,5 +3,5 @@ export interface TestimonialItem {
     job: string;
     testimonial: string;
     artwork: string;
-    liveUrl?: string;
+    liveUrl: string;
 }

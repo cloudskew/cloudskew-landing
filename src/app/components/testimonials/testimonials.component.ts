@@ -29,6 +29,7 @@ export class TestimonialsComponent implements OnInit {
       job: 'Cloud Solution Architect',
       testimonial: `"Wow, CloudSkew by @MithunShanbhag is a really nice online diagramming tool with tons of built-in dev icons (Azure, K8S, programming langs, etc, etc)..."`,
       artwork: '../../../assets/plus-icon.svg',
+      liveUrl: 'https://twitter.com/dracan/status/1306108161007509504',
     },
     {
       name: 'Swaminathan Vetri',
