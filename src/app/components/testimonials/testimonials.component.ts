@@ -15,7 +15,7 @@ export class TestimonialsComponent implements OnInit {
       job: 'Microsoft Azure MVP',
       testimonial: `"I absolutely fell in love with CloudSkew. Things you need are.. just.. there.."`,
       artwork: '../../../assets/triangle-icon.svg',
-      liveUrl: 'https://twitter.com/whaakman/status/1370035551231967235'
+      liveUrl: 'https://twitter.com/whaakman/status/1370035551231967235',
     },
     {
       name: 'John Doe',
@@ -24,16 +24,18 @@ export class TestimonialsComponent implements OnInit {
       artwork: '../../../assets/square-icon.svg',
     },
     {
-      name: 'John Doe',
-      job: 'Software Director - Foo Bar Baz',
-      testimonial: `"Anim magna ad qui enim sunt cupidatat in. Tempor cupidatat nisi enim ipsum ad exercitation."`,
+      name: 'Anand Kumar R',
+      job: 'Cloud Solution Architect @ Microsoft',
+      testimonial: `"So I used cloudskew.com for the first time and it was a breeze, super easy and intuitive to create architecture diagrams! Love it."`,
       artwork: '../../../assets/plus-icon.svg',
+      liveUrl: 'https://twitter.com/ranand12/status/1278370886198886406',
     },
     {
-      name: 'John Doe',
-      job: 'Software Director - Foo Bar Baz',
-      testimonial: `"Anim magna ad qui enim sunt cupidatat in. Tempor cupidatat nisi enim ipsum ad exercitation."`,
+      name: 'Swaminathan Vetri',
+      job: 'Microsoft MVP | Architect @ Maersk',
+      testimonial: `"CloudSkew is a super cool product. Neat and clean to draw cloud arch diagrams. Kudos to @MithunShanbhag for this great product."`,
       artwork: '../../../assets/ellipse-icon.svg',
+      liveUrl: 'https://twitter.com/svswaminathan/status/1224358759364845569',
     },
     {
       name: 'John Doe',
