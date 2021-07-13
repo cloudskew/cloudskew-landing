@@ -9,12 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* text styling */
-    font-family: var(--font-family-open-sans);
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-secondary);
 }
 
 .cs-header-branding {
@@ -32,12 +26,6 @@
     border-radius: 5px;
 }
 
-.cs-header-branding-text { /* use this class with <span> tags only */
-    /* text styling */
-    font-size: 30px;
-    font-weight: 700;
-}
-
 .cs-header-nav {
     /* flex container */
     display: flex;
@@ -50,7 +38,6 @@
     margin: auto 0 auto 35px; /* left margin at 35px */
 
     /* text styling */
-    color: var(--color-secondary);
     text-decoration: none; /* removes text decorations related to <a> hyperlinks */
 }
 
