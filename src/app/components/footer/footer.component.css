@@ -4,10 +4,6 @@
     margin: auto; /* for horizontal centering */
     padding: 100px 5px 0px 5px;
 
-    /* text styling */
-    font-family: var(--font-family-open-sans);
-    color: var(--color-secondary);
-
     /* flex container */
     display: flex;
     justify-content: space-around;
@@ -29,25 +25,14 @@
 .cs-footer-column-item {
     /* flex item */
     margin-bottom: 20px;
-
-    /* text styling */
-    font-size: 18px;
-    font-weight: 400;
 }
 
 .cs-footer-column-item-link { /* use this class with <a>, <span> tags only */
-    color: var(--color-secondary);
     text-decoration: none; /* removes text decorations related to <a> hyperlinks */
 }
 
 .cs-footer-column-item-link:hover, .cs-footer-column-item-link:focus {
     text-decoration: underline;
-}
-
-.cs-footer-column-header {
-    /* text styling */
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .cs-footer-column-branding {
@@ -62,12 +47,6 @@
     width: 30px;
     height: 30px;
     border-radius: 5px;
-}
-
-.cs-footer-column-branding-text {
-    /* text styling */
-    font-size: 30px;
-    font-weight: 700;
 }
 
 .cs-footer-column-social-bar {
