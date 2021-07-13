@@ -18,17 +18,17 @@ export class TestimonialsComponent implements OnInit {
       liveUrl: 'https://twitter.com/whaakman/status/1370035551231967235',
     },
     {
-      name: 'John Doe',
-      job: 'Cloud Solution Architect',
-      testimonial: `"Aliqua pariatur id ex dolor laborum. Sunt ullamco consequat eu excepteur voluptate esse aliqua proident et nulla adipisicing exercitation commodo. Officia quis nisi deserunt nulla ad fugiat velit eu occaecat anim est."`,
-      artwork: '../../../assets/square-icon.svg',
-    },
-    {
       name: 'Anand Kumar R',
       job: 'Cloud Solution Architect @ Microsoft',
       testimonial: `"So I used cloudskew.com for the first time and it was a breeze, super easy and intuitive to create architecture diagrams! Love it."`,
-      artwork: '../../../assets/plus-icon.svg',
+      artwork: '../../../assets/square-icon.svg',
       liveUrl: 'https://twitter.com/ranand12/status/1278370886198886406',
+    },
+    {
+      name: 'Dan Clarke',
+      job: 'Cloud Solution Architect',
+      testimonial: `"Wow, CloudSkew by @MithunShanbhag is a really nice online diagramming tool with tons of built-in dev icons (Azure, K8S, programming langs, etc, etc)..."`,
+      artwork: '../../../assets/plus-icon.svg',
     },
     {
       name: 'Swaminathan Vetri',
@@ -38,10 +38,18 @@ export class TestimonialsComponent implements OnInit {
       liveUrl: 'https://twitter.com/svswaminathan/status/1224358759364845569',
     },
     {
-      name: 'John Doe',
-      job: 'Cloud Solution Architect',
-      testimonial: `"Aliqua pariatur id ex dolor laborum. Sunt ullamco consequat eu excepteur voluptate esse aliqua proident et nulla adipisicing exercitation commodo. Officia quis nisi deserunt nulla ad fugiat velit eu occaecat anim est."`,
+      name: 'Mike Rodrick',
+      job: 'Edutainer @ ITProTV',
+      testimonial: `If you need to make Azure architecture diagrams, give CloudSkew a try, this tool is awesome!`,
+      artwork: '../../../assets/square-icon.svg',
+      liveUrl: 'https://twitter.com/Mike_ITProTV/status/1219711202370170881',
+    },
+    {
+      name: 'Sathyajit Bhat',
+      job: 'AWS Community Hero | DevOps @ Adobe',
+      testimonial: `"Cloudskew from @MithunShanbhag is a fantastic tool for drawing out cloud architectures. I've used it couple of times and found it very handy."`,
       artwork: '../../../assets/multiply-icon.svg',
+      liveUrl: 'https://twitter.com/SathyaBhat/status/1275800008747515905',
     },
   ];
 
