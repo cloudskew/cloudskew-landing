@@ -1,9 +1,4 @@
 .footer {
-    /* layout */
-    width: 80vw;
-    margin: auto; /* for horizontal centering */
-    padding: 100px 5px 0px 5px;
-
     /* flex container */
     display: flex;
     justify-content: space-around;
@@ -61,16 +56,4 @@
 .footer-column-social-link {
     /* flex item */
     margin-right: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-    .footer {
-        width: 90vw;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .footer {
-        width: 100vw;
-    }
 }
