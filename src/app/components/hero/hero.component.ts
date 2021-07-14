@@ -21,16 +21,14 @@ export class HeroComponent implements OnInit {
 
     var typedjsOptions = {
       strings: [
-        'AWS Diagrams',
-        'Azure Diagrams',
-        'GCP Diagrams',
-        'Kubernetes Diagrams',
-        'Oracle Cloud Diagrams',
-        'Alibaba Cloud Diagrams',
+        '???',
+        'AWS',
+        'Azure',
+        'GCP',
+        'Kubernetes',
+        'Oracle Cloud',
+        'Alibaba Cloud',
         'Elastic Cloud',
-        'Flowcharts',
-        'Anything',
-        'Absolutely Anything',
       ],
       typeSpeed: 100,
       startDelay: 5000,
