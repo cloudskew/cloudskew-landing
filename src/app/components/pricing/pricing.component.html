@@ -19,7 +19,7 @@
                         <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
                             [alt]="feature.featureText">
                         <span
-                            class="cs-pricing-table-features-row-featureText font-secondary-content">{{feature.featureText}}</span>
+                            class="cs-pricing-table-features-row-featureText cs-font-secondary-content">{{feature.featureText}}</span>
                         <img *ngIf="feature.featureContext" [src]="feature.featureContextIcon"
                             [title]="feature.featureContext" [alt]="feature.featureContext">
                     </div>
@@ -29,7 +29,7 @@
     </div>
 
     <!-- CTA button -->
-    <a class="cs-pricing-cta-button font-secondary-content" [href]="this.appUrl" target="_blank"
+    <a class="cs-pricing-cta-button cs-font-secondary-content" [href]="this.appUrl" target="_blank"
         rel="noopener noreferrer">Start for Free</a>
     <!-- needed since button above is an inline/inline-block element -->
     <br>
