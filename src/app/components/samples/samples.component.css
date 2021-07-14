@@ -18,7 +18,7 @@
     border-radius: 5px;
     margin: 20px; /* 20px vertical separation between flex items when wrapped */
     padding: 30px;
-    flex-basis: 35%; /* this is to ensure that we get max two flex-items per row */
+    flex-basis: 40%; /* this is to ensure that we get max two flex-items per row */
 }
 
 .samples-gallery-item-header {
@@ -76,10 +76,13 @@
     box-shadow: 15px 15px 10px var(--color-secondary-lighter);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
     .samples-gallery-item {
-        flex-basis: 80%; /* this is to ensure that we get max one flex-item per row */
+        flex-basis: 80%; /* this is to ensure that we get max one flex-items per row */
     }
+}
+
+@media screen and (max-width: 980px) {
     /* Better to hide the 'see live' link at lower resolutions for the following reasons:border:
        1. Messes up the landing page display on mobile.
        2. The diagram viewer doesn't render well at lower resolutions.

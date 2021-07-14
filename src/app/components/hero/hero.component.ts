@@ -21,7 +21,7 @@ export class HeroComponent implements OnInit {
 
     var typedjsOptions = {
       strings: [
-        '???',
+        'Cloud Architecture',
         'AWS',
         'Azure',
         'GCP',
@@ -29,13 +29,13 @@ export class HeroComponent implements OnInit {
         'Oracle Cloud',
         'Alibaba Cloud',
         'Elastic Cloud',
+        'Cloud Architecture',
       ],
       typeSpeed: 100,
-      startDelay: 5000,
-      backSpeed: 60,
+      startDelay: 2000,
+      backSpeed: 30,
       backDelay: 2000,
       loop: true,
-      loopCount: Infinity,
       showCursor: false,
     };
 

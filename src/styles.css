@@ -109,7 +109,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-weight: 600;
 }
 
-.cs-section-title-typedjs {
+.cs-section-title-cursor {
     /* This class is required for typed.js to work. */
     /* Don't delete, even though it may be empty. */
     color: var(--color-secondary-lighter);
