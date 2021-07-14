@@ -1,4 +1,4 @@
-.cs-testimonials-flexbox {
+.testimonials-flexbox {
     /* flex container */
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-.cs-testimonials-card {
+.testimonials-card {
     /* flex item: styling */
     background-color: var(--color-primary);
 
@@ -16,7 +16,7 @@
     flex-basis: 40%;
 }
 
-.cs-testimonials-card-quote {
+.testimonials-card-quote {
     /* layout */
     display: block;
     margin: 30px 0px;
@@ -28,11 +28,11 @@
     text-decoration: none; /* remove decoration from links */
 }
 
-.cs-testimonials-card-quote:hover, .cs-testimonials-card-quote:focus {
+.testimonials-card-quote:hover, .testimonials-card-quote:focus {
     border-left: 5px solid var(--color-accent-light);
 }
 
-.cs-testimonials-card-user-flexbox {
+.testimonials-card-user-flexbox {
     /* layout */
     margin: 30px;
 
@@ -42,11 +42,11 @@
     align-items: center;
 }
 
-.cs-testimonials-card-user-details {
+.testimonials-card-user-details {
     margin-right: 30px;
 }
 
-.cs-testimonials-card-user-details-name {
+.testimonials-card-user-details-name {
     /* layout */
     margin-bottom: 10px;
 
@@ -54,13 +54,13 @@
     text-align: left;
 }
 
-.cs-testimonials-card-user-details-job {
+.testimonials-card-user-details-job {
     /* text styling */
     text-align: left;
 }
 
 @media screen and (max-width: 1200px) {
-    .cs-testimonials-card-user-artwork {
+    .testimonials-card-user-artwork {
         display: none;
     }
 }
