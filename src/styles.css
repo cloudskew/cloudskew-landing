@@ -97,6 +97,18 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-weight: 400;
 }
 
+.cs-section-title-larger { /* Use on <span> elements only */
+    /* layout */
+    display: block;
+    margin-bottom: 35px;
+
+    /* text styling */
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-gotham);
+    font-size: 45px;
+    font-weight: 600;
+}
+
 .cs-section-title-typedjs {
     /* This class is required for typed.js to work. */
     /* Don't delete, even though it may be empty. */
