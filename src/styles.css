@@ -18,6 +18,25 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --font-family-montserrat: "Montserrat", sans-serif;
 }
 
+.cs-background-primary {
+    background-color: var(--color-primary);
+}
+
+.cs-background-primary-dark {
+    background-color: var(--color-primary-dark);
+}
+
+.cs-background-gradient-primary-to-primary-dark {
+    background-image: linear-gradient(to bottom, white, var(--color-primary-dark));
+}
+
+.cs-background-grid-primary-dark {
+    background-color: var(--color-primary-dark);
+    background-image: 
+        repeating-linear-gradient(to right, #DEDDDD 0px 0.01px, transparent 1px 25px),
+        repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
+}
+
 .cs-section {
     /* layout */
     width: 80vw;
@@ -41,25 +60,6 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-family: var(--font-family-montserrat);
     font-size: 40px;
     font-weight: 400;
-}
-
-.cs-bg-color-primary {
-    background-color: var(--color-primary);
-}
-
-.cs-bg-color-primary-dark {
-    background-color: var(--color-primary-dark);
-}
-
-.cs-bg-color-primary-dark-gradient {
-    background-image: linear-gradient(to bottom, white, var(--color-primary-dark));
-}
-
-.cs-bg-grid {
-    background-color: var(--color-primary-dark);
-    background-image: 
-        repeating-linear-gradient(to right, #DEDDDD 0px 0.01px, transparent 1px 25px),
-        repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
 }
 
 .cs-font-branding {
