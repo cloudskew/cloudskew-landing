@@ -113,6 +113,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     /* This class is required for typed.js to work. */
     /* Don't delete, even though it may be empty. */
     color: var(--color-secondary-lighter);
+    text-decoration: underline;
 }
 
 .cs-font-branding {
@@ -140,6 +141,13 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
     font-size: 18px;
+    font-weight: 300;
+}
+
+.cs-font-contextual-info {
+    color: var(--color-secondary-light);
+    font-family: var(--font-family-open-sans);
+    font-size: 12px;
     font-weight: 300;
 }
 

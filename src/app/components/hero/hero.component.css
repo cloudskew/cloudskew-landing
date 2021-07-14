@@ -1,4 +1,4 @@
-.cs-hero {
+.hero {
     /* styling */
     background-color: var(--color-primary);
 
@@ -11,12 +11,12 @@
     width: 80%; /* 80% of parent container */
 }
 
-.cs-hero img {
+.hero img {
     width: 100%; /* 100% of parent container */
     height: auto;
 }
 
-.cs-hero-cta-button {
+.hero-cta-button {
     background-color: var(--color-accent);
 
     /* layout */
@@ -30,9 +30,14 @@
     white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
-.cs-hero-cta-button:hover, .cs-hero-cta-button:focus {
+.hero-cta-button:hover, .hero-cta-button:focus {
     background-color: var(--color-accent-light);
 
     /* text styling */
     text-decoration: none;
+}
+
+.hero-cta-context {
+    /* layout */
+    display: block;
 }

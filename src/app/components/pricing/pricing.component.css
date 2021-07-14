@@ -55,12 +55,6 @@
     font-weight: 700;
 }
 
-.pricing-table-header-subtitle {
-    /* text styling */
-    font-size: 12px;
-    font-weight: 300;
-}
-
 .pricing-table-features {
     /* layout */
     /* border: 1px solid var(--color-accent); */ /* @todo: commented out for A/B testing */
@@ -113,9 +107,8 @@
 }
 
 .pricing-more-details {
-    /* text styling */
-    font-size: 14px;
-    font-weight: 400;
+    /* layout */
+    display: block;
 }
 
 .pricing-more-details a {
