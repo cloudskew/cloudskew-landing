@@ -13,7 +13,7 @@
     /* flex item: layout */
     border-radius: 5px;
     margin: 20px; /* 20px vertical separation between flex items when wrapped */
-    flex-basis: 40%;
+    flex-basis: 27%;
 }
 
 .testimonials-card-quote {
@@ -62,5 +62,11 @@
 @media screen and (max-width: 1200px) {
     .testimonials-card-user-artwork {
         display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .testimonials-card {
+        flex-basis: 100%; /* this is to ensure that we get max one flex-item per row */
     }
 }

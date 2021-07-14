@@ -77,6 +77,9 @@
 }
 
 @media screen and (max-width: 980px) {
+    .samples-gallery-item {
+        flex-basis: 60%; /* this is to ensure that we get max one flex-item per row */
+    }
     /* Better to hide the 'see live' link at lower resolutions for the following reasons:border:
        1. Messes up the landing page display on mobile.
        2. The diagram viewer doesn't render well at lower resolutions.
