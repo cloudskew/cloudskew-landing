@@ -1,4 +1,4 @@
-.cs-header {
+.header {
     /* layout */
     width: 80vw;
     height: 150px;
@@ -11,14 +11,14 @@
     align-items: center;
 }
 
-.cs-header-branding {
+.header-branding {
     /* flex container */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.cs-header-branding-logo img {
+.header-branding-logo img {
     /* layout */
     margin: auto 10px auto 0; /* right margin at 10px */
     width: 50px;
@@ -26,14 +26,14 @@
     border-radius: 5px;
 }
 
-.cs-header-nav {
+.header-nav {
     /* flex container */
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.cs-header-nav-link { /* use this class with <a> tags only */
+.header-nav-link { /* use this class with <a> tags only */
     /* layout */
     margin: auto 0 auto 35px; /* left margin at 35px */
 
@@ -41,7 +41,7 @@
     text-decoration: none; /* removes text decorations related to <a> hyperlinks */
 }
 
-.cs-header-nav-link:hover, .cs-header-nav-link:focus {
+.header-nav-link:hover, .header-nav-link:focus {
     /* text styling */
     text-decoration: underline;
 }
@@ -65,11 +65,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .cs-header {
+    .header {
         width: 90vw;
     }
 
-    .cs-header-nav-link {
+    .header-nav-link {
         margin: auto 0 auto 25px; /* left margin at 25px */
     }
 }
