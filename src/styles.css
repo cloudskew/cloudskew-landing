@@ -97,6 +97,12 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-weight: 400;
 }
 
+.cs-section-title-typedjs {
+    /* This class is required for typed.js to work. */
+    /* Don't delete, even though it may be empty. */
+    color: var(--color-secondary-lighter);
+}
+
 .cs-font-branding {
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
@@ -108,7 +114,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     color: var(--color-secondary-lighter);
     font-family: var(--font-family-gotham);
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .cs-font-primary-content {
