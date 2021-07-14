@@ -1,4 +1,22 @@
 .cs-hero {
-    background-image: linear-gradient(white, #E5E5E5);
-    height: 600px; /* @todo: for testing only, remove later */
+}
+
+.cs-hero-cta-button {
+    background-color: var(--color-accent);
+
+    /* layout */
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 35px;
+
+    /* text styling */
+    text-decoration: none;
+    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
+}
+
+.cs-hero-cta-button:hover, .cs-hero-cta-button:focus {
+    background-color: var(--color-accent-light);
+
+    /* text styling */
+    text-decoration: none;
 }
