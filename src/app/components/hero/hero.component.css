@@ -1,4 +1,19 @@
 .cs-hero {
+    /* styling */
+    background-color: var(--color-primary);
+
+    /* layout */
+    margin: 50px auto;
+    padding: 20px;
+    border: 0.1px solid #DEDDDD;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px var(--color-secondary-lighter);
+    width: 80%; /* 80% of parent container */
+}
+
+.cs-hero img {
+    width: 100%; /* 100% of parent container */
+    height: auto;
 }
 
 .cs-hero-cta-button {

@@ -9,6 +9,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --color-secondary: black;
     --color-secondary-light: #002927;
     --color-secondary-lighter: #647E7D;
+    --color-secondary-lightest: #DEDDDD;
     --color-accent: #00BBB0;
     --color-accent-light: #00C8BE;
 
@@ -36,6 +37,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     margin-bottom: 35px;
 
     /* text styling */
+    color: var(--color-secondary-light);
     font-family: var(--font-family-montserrat);
     font-size: 40px;
     font-weight: 400;
@@ -47,6 +49,10 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 .bg-color-primary-dark {
     background-color: var(--color-primary-dark);
+}
+
+.bg-color-primary-dark-gradient {
+    background-image: linear-gradient(to bottom, white, var(--color-primary-dark));
 }
 
 .bg-grid {

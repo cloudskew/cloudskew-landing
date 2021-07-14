@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UrlConstants } from 'src/app/constants/urlConstants';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-hero',
@@ -10,6 +11,7 @@ export class HeroComponent implements OnInit {
 
   //
   appUrl = UrlConstants.appUrl;
+  heroImageUrl = `${environment.cdnUrlPrefix}/assets/misc/landing-page-hero-3.png`;
 
   constructor() { }
 
