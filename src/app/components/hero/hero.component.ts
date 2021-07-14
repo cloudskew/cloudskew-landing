@@ -24,10 +24,11 @@ export class HeroComponent implements OnInit {
         'Cloud Architecture',
         'AWS',
         'Azure',
-        'GCP',
+        'Google Cloud',
         'Kubernetes',
         'Oracle Cloud',
         'Alibaba Cloud',
+        'IBM Cloud',
         'Elastic Cloud',
         'Cloud Architecture',
       ],
@@ -39,6 +40,6 @@ export class HeroComponent implements OnInit {
       showCursor: false,
     };
 
-    var typedjs = new Typed('.cs-section-title-typedjs', typedjsOptions);
+    var typedjs = new Typed('.cs-section-title-cursor', typedjsOptions);
   }
 }
