@@ -1,10 +1,6 @@
 /* mobile layout */
 @media screen and (max-width: 980px) {
-    .cs-header {
-        width: 100vw;
-    }
-
-    .cs-header-nav {
+    .header-nav {
         display: none;
     }
 }

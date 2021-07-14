@@ -9,12 +9,45 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     --color-secondary: black;
     --color-secondary-light: #002927;
     --color-secondary-lighter: #647E7D;
+    --color-secondary-lightest: #DEDDDD;
     --color-accent: #00BBB0;
     --color-accent-light: #00C8BE;
 
     /* font families */
     --font-family-open-sans: "Open Sans", sans-serif;
     --font-family-montserrat: "Montserrat", sans-serif;
+}
+
+.cs-background-primary {
+    background-color: var(--color-primary);
+}
+
+.cs-background-primary-dark {
+    background-color: var(--color-primary-dark);
+}
+
+.cs-background-gradient-primary-to-primary-dark {
+    background-image: linear-gradient(to bottom, white, var(--color-primary-dark));
+}
+
+.cs-background-grid-primary-dark {
+    background-color: var(--color-primary-dark);
+    background-image: 
+        repeating-linear-gradient(to right, #DEDDDD 0px 0.01px, transparent 1px 25px),
+        repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
+}
+
+.cs-section-smaller {
+    /* layout */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 50px 5px;
+
+    /* text styling */
+    font-family: var(--font-family-open-sans);
+    color: var(--color-secondary);
+    line-height: 1;
+    text-align: center;
 }
 
 .cs-section {
@@ -36,62 +69,57 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     margin-bottom: 35px;
 
     /* text styling */
+    color: var(--color-secondary-light);
     font-family: var(--font-family-montserrat);
     font-size: 40px;
     font-weight: 400;
 }
 
-.bg-color-primary {
-    background-color: var(--color-primary);
-}
-
-.bg-color-primary-dark {
-    background-color: var(--color-primary-dark);
-}
-
-.bg-grid {
-    background-color: var(--color-primary-dark);
-    background-image: 
-        repeating-linear-gradient(to right, #DEDDDD 0px 0.01px, transparent 1px 25px),
-        repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
-}
-
-.font-branding {
+.cs-font-branding {
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
     font-size: 30px;
     font-weight: 700;
 }
 
-.font-quote {
+.cs-font-quote {
     color: var(--color-secondary-lighter);
     font-family: var(--font-family-montserrat);
     font-size: 24px;
     font-weight: 300;
 }
 
-.font-primary-content {
+.cs-font-primary-content {
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
     font-size: 20px;
     font-weight: 600;
 }
 
-.font-secondary-content {
+.cs-font-secondary-content {
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
     font-size: 18px;
     font-weight: 300;
 }
 
+/* 4K and wide monitors */
+@media screen and (min-width: 1921px) {
+    .cs-section-smaller, .cs-section {
+        width: calc(0.8 * 1920px);
+    }
+}
+
+/* IPad2 and tablets */
 @media screen and (max-width: 1200px) {
-    .cs-section {
+    .cs-section-smaller, .cs-section {
         width: 90vw;
     }
 }
 
+/* Smaller form-factors, including mobile */
 @media screen and (max-width: 980px) {
-    .cs-section {
+    .cs-section-smaller, .cs-section {
         width: 100vw;
     }
 }

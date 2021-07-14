@@ -1,4 +1,4 @@
-.cs-samples-gallery {
+.samples-gallery {
     /* layout */
     margin-bottom: 35px;
 
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.cs-samples-gallery-item {
+.samples-gallery-item {
     /* flex item */
     background-color: var(--color-primary-dark);
 
@@ -21,7 +21,7 @@
     flex-basis: 35%; /* this is to ensure that we get max two flex-items per row */
 }
 
-.cs-samples-gallery-item-header {
+.samples-gallery-item-header {
     /* layout */
     margin-bottom: 10px;
 
@@ -32,12 +32,12 @@
     align-items: center;
 }
 
-.cs-samples-gallery-item-header-title {
+.samples-gallery-item-header-title {
     /* text styling */
     text-align: left;
 }
 
-.cs-samples-gallery-item-header-sharelink {
+.samples-gallery-item-header-sharelink {
     /* text styling */
     text-align: left;
     font-size: 14px;
@@ -46,13 +46,13 @@
     text-decoration: none;
 }
 
-.cs-samples-gallery-item-header-sharelink:hover, .cs-samples-gallery-item-header-sharelink:focus {
+.samples-gallery-item-header-sharelink:hover, .samples-gallery-item-header-sharelink:focus {
     /* text styling */
     color: var(--color-accent-light);
     text-decoration: underline;
 }
 
-.cs-samples-gallery-item-description {
+.samples-gallery-item-description {
     /* layout */
     display: block;
     margin-bottom: 25px;
@@ -61,7 +61,7 @@
     text-align: left;
 }
 
-.cs-samples-gallery-item-image img {
+.samples-gallery-item-image img {
     /* layout */
     width: 100%; /* 100% of parent container */
     height: auto;
@@ -71,7 +71,7 @@
     box-shadow: 10px 10px 10px var(--color-secondary-lighter);
 }
 
-.cs-samples-gallery-item-image img:hover {
+.samples-gallery-item-image img:hover {
     /* styling */
     box-shadow: 15px 15px 10px var(--color-secondary-lighter);
 }
@@ -81,7 +81,7 @@
        1. Messes up the landing page display on mobile.
        2. The diagram viewer doesn't render well at lower resolutions.
     */
-    .cs-samples-gallery-item-header-sharelink {
+    .samples-gallery-item-header-sharelink {
         display: none;
     }
 }

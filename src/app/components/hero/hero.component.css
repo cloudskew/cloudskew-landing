@@ -1,4 +1,38 @@
 .cs-hero {
-    background-image: linear-gradient(white, #E5E5E5);
-    height: 600px; /* @todo: for testing only, remove later */
+    /* styling */
+    background-color: var(--color-primary);
+
+    /* layout */
+    margin: 50px auto;
+    padding: 20px;
+    border: 0.1px solid #DEDDDD;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px var(--color-secondary-lighter);
+    width: 80%; /* 80% of parent container */
+}
+
+.cs-hero img {
+    width: 100%; /* 100% of parent container */
+    height: auto;
+}
+
+.cs-hero-cta-button {
+    background-color: var(--color-accent);
+
+    /* layout */
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 35px;
+    margin-bottom: 35px;
+
+    /* text styling */
+    text-decoration: none;
+    white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
+}
+
+.cs-hero-cta-button:hover, .cs-hero-cta-button:focus {
+    background-color: var(--color-accent-light);
+
+    /* text styling */
+    text-decoration: none;
 }
