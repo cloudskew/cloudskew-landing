@@ -29,8 +29,7 @@
 
 .cs-features-card-title {
     /* layout */
-    margin-left: 30px;
-    margin-bottom: 15px;
+    margin: 0px 30px;
 
     /* text styling */
     text-align: left;
@@ -38,7 +37,7 @@
 
 .cs-features-card-description {
     /* layout */
-    margin-left: 30px;
+    margin: 15px 30px 30px 30px;
 
     /* text styling */
     text-align: left;

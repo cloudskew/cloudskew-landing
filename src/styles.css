@@ -50,7 +50,10 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 }
 
 .bg-grid {
-    
+    background-color: var(--color-primary-dark);
+    background-image: 
+        repeating-linear-gradient(to right, #DEDDDD 0px 0.01px, transparent 1px 25px),
+        repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
 }
 
 .font-branding {
