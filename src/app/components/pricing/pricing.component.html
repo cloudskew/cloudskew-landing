@@ -3,23 +3,23 @@
     <span class="cs-section-title">CloudSkew plans</span>
 
     <!-- pricing tables -->
-    <div class="cs-pricing-tables">
+    <div class="pricing-tables">
         <!-- individual pricing table -->
-        <div class="cs-pricing-table-wrapper" *ngFor="let plan of this.pricingPlans">
-            <div class="cs-pricing-table">
+        <div class="pricing-table-wrapper" *ngFor="let plan of this.pricingPlans">
+            <div class="pricing-table">
                 <!-- table "header" -->
-                <div class="cs-pricing-table-header">
-                    <div class="cs-pricing-table-header-title">{{plan.title}}</div>
-                    <div class="cs-pricing-table-header-price">{{plan.price}}</div>
-                    <div class="cs-pricing-table-header-subtitle">{{plan.subtitle}}</div>
+                <div class="pricing-table-header">
+                    <div class="pricing-table-header-title">{{plan.title}}</div>
+                    <div class="pricing-table-header-price">{{plan.price}}</div>
+                    <div class="pricing-table-header-subtitle">{{plan.subtitle}}</div>
                 </div>
                 <!-- table features/content -->
-                <div class="cs-pricing-table-features">
-                    <div class="cs-pricing-table-features-row" *ngFor="let feature of plan.features">
-                        <img class="cs-pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
+                <div class="pricing-table-features">
+                    <div class="pricing-table-features-row" *ngFor="let feature of plan.features">
+                        <img class="pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
                             [alt]="feature.featureText">
                         <span
-                            class="cs-pricing-table-features-row-featureText cs-font-secondary-content">{{feature.featureText}}</span>
+                            class="pricing-table-features-row-featureText cs-font-secondary-content">{{feature.featureText}}</span>
                         <img *ngIf="feature.featureContext" [src]="feature.featureContextIcon"
                             [title]="feature.featureContext" [alt]="feature.featureContext">
                     </div>
@@ -29,13 +29,13 @@
     </div>
 
     <!-- CTA button -->
-    <a class="cs-pricing-cta-button cs-font-secondary-content" [href]="this.appUrl" target="_blank"
+    <a class="pricing-cta-button cs-font-secondary-content" [href]="this.appUrl" target="_blank"
         rel="noopener noreferrer">Start for Free</a>
     <!-- needed since button above is an inline/inline-block element -->
     <br>
 
     <!-- additional details -->
-    <span class="cs-pricing-more-details">For more details, please see our <a [href]="this.faqsUrl" target="_blank"
+    <span class="pricing-more-details">For more details, please see our <a [href]="this.faqsUrl" target="_blank"
             rel="noopener noreferrer">FAQs</a>, <a [href]="this.termOfServiceUrl" target="_blank"
             rel="noopener noreferrer">Terms of Service</a>, and <a [href]="this.privacyPolicyUrl" target="_blank"
             rel="noopener noreferrer">Privacy

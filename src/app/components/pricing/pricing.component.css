@@ -1,4 +1,4 @@
-.cs-pricing-tables {
+.pricing-tables {
     /* layout */
     margin-bottom: 35px;
 
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 }
 
-.cs-pricing-table-wrapper {
+.pricing-table-wrapper {
     /* flex item */
     background-color: var(--color-primary-dark);
 
@@ -20,11 +20,11 @@
     padding: 30px;
 }
 
-.cs-pricing-table {
+.pricing-table {
     background-color: var(--color-primary);
 }
 
-.cs-pricing-table-header {
+.pricing-table-header {
     /* layout */
     /* border: 1px solid var(--color-accent); */ /* @todo: commented out for A/B testing */
     /* border: 1px solid #DEDDDD; */ /* @todo: commented out for A/B testing */
@@ -36,7 +36,7 @@
     text-align: center;
 }
 
-.cs-pricing-table-header-title {
+.pricing-table-header-title {
     /* layout */
     margin-bottom: 10px;
 
@@ -46,7 +46,7 @@
     font-weight: 700;
 }
 
-.cs-pricing-table-header-price {
+.pricing-table-header-price {
     /* layout */
     margin-bottom: 10px;
 
@@ -55,20 +55,20 @@
     font-weight: 700;
 }
 
-.cs-pricing-table-header-subtitle {
+.pricing-table-header-subtitle {
     /* text styling */
     font-size: 12px;
     font-weight: 300;
 }
 
-.cs-pricing-table-features {
+.pricing-table-features {
     /* layout */
     /* border: 1px solid var(--color-accent); */ /* @todo: commented out for A/B testing */
     border-radius: 0px 0px 5px 5px;
     padding: 20px;
 }
 
-.cs-pricing-table-features-row {
+.pricing-table-features-row {
     /* flex container */
     display: flex;
     justify-content: flex-start;
@@ -78,12 +78,12 @@
     margin-bottom: 15px;
 }
 
-.cs-pricing-table-features-row-checkbox {
+.pricing-table-features-row-checkbox {
     /* layout */
     margin-right: 10px;
 }
 
-.cs-pricing-table-features-row-featureText {
+.pricing-table-features-row-featureText {
     /* layout */
     margin-right: 10px;
 
@@ -91,7 +91,7 @@
     white-space: nowrap; /* to prevent text from wrapping at lesser screen resolutions */
 }
 
-.cs-pricing-cta-button {
+.pricing-cta-button {
     background-color: var(--color-accent);
 
     /* layout */
@@ -105,26 +105,26 @@
     white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
-.cs-pricing-cta-button:hover, .cs-pricing-cta-button:focus {
+.pricing-cta-button:hover, .pricing-cta-button:focus {
     background-color: var(--color-accent-light);
 
     /* text styling */
     text-decoration: none;
 }
 
-.cs-pricing-more-details {
+.pricing-more-details {
     /* text styling */
     font-size: 14px;
     font-weight: 400;
 }
 
-.cs-pricing-more-details a {
+.pricing-more-details a {
     /* text styling */
     color: var(--color-secondary);
     text-decoration: none;
 }
 
-.cs-pricing-more-details a:hover, .cs-pricing-more-details a:focus {
+.pricing-more-details a:hover, .pricing-more-details a:focus {
     /* text styling */
     text-decoration: underline;
 }
