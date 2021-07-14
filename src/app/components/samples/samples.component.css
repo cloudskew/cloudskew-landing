@@ -14,7 +14,7 @@
     background-color: var(--color-primary-dark);
 
     /* flex item, layout */
-    /* border: 1px solid #DEDDDD; */ /* @todo: commented out for A/B testing */
+    border: 1px solid var(--color-secondary-lightest); /* @todo: commented out for A/B testing */
     border-radius: 5px;
     margin: 20px; /* 20px vertical separation between flex items when wrapped */
     padding: 30px;
