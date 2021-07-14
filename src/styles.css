@@ -49,6 +49,10 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     background-color: var(--color-primary-dark);
 }
 
+.bg-grid {
+    
+}
+
 .font-branding {
     color: var(--color-secondary-light);
     font-family: var(--font-family-open-sans);
