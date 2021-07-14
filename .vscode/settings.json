@@ -23,6 +23,8 @@
         "devkit",
         "kubernetes",
         "linkedin",
-        "preconnect"
+        "opentype",
+        "preconnect",
+        "truetype"
     ]
 }

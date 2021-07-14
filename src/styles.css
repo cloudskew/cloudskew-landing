@@ -2,6 +2,28 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
+@font-face {
+    font-family: Gotham;
+    src: 
+        url("./assets/fonts/gotham/gotham-black.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-bold.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-bold.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-bolditalic.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-book.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-bookitalic.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-bookitalic.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-light.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-light.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-lightitalic.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-medium.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-mediumitalic.ttf") format("truetype"),
+        url("./assets/fonts/gotham/gotham-thin.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-thinitalic.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-ultraitalic.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-xlight.otf") format("opentype"),
+        url("./assets/fonts/gotham/gotham-xlightitalic.otf") format("opentype");
+}
+
 :root {
     /* color palette */
     --color-primary: white;
@@ -15,7 +37,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
     /* font families */
     --font-family-open-sans: "Open Sans", sans-serif;
-    --font-family-montserrat: "Montserrat", sans-serif;
+    --font-family-gotham: "Gotham", sans-serif;
 }
 
 .cs-background-primary {
@@ -70,7 +92,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
     /* text styling */
     color: var(--color-secondary-light);
-    font-family: var(--font-family-montserrat);
+    font-family: var(--font-family-gotham);
     font-size: 40px;
     font-weight: 400;
 }
@@ -84,7 +106,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 .cs-font-quote {
     color: var(--color-secondary-lighter);
-    font-family: var(--font-family-montserrat);
+    font-family: var(--font-family-gotham);
     font-size: 24px;
     font-weight: 300;
 }
