@@ -1,10 +1,4 @@
 .header {
-    /* layout */
-    width: 80vw;
-    height: 150px;
-    margin: auto; /* for horizontal centering */
-    padding: 0px 5px;
-
     /* flex container */
     display: flex;
     justify-content: space-between;
@@ -65,10 +59,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .header {
-        width: 90vw;
-    }
-
     .header-nav-link {
         margin: auto 0 auto 25px; /* left margin at 25px */
     }

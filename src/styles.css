@@ -37,6 +37,19 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
         repeating-linear-gradient(to bottom, #DEDDDD 0px 0.01px, transparent 1px 25px);
 }
 
+.cs-section-smaller {
+    /* layout */
+    width: 80vw;
+    margin: auto; /* for horizontal centering */
+    padding: 50px 5px;
+
+    /* text styling */
+    font-family: var(--font-family-open-sans);
+    color: var(--color-secondary);
+    line-height: 1;
+    text-align: center;
+}
+
 .cs-section {
     /* layout */
     width: 80vw;
@@ -90,20 +103,23 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-weight: 300;
 }
 
+/* 4K and wide monitors */
 @media screen and (min-width: 1921px) {
-    .cs-section {
-        width: calc(0.9 * 1920px);
+    .cs-section-smaller, .cs-section {
+        width: calc(0.8 * 1920px);
     }
 }
 
+/* IPad2 and tablets */
 @media screen and (max-width: 1200px) {
-    .cs-section {
+    .cs-section-smaller, .cs-section {
         width: 90vw;
     }
 }
 
+/* Smaller form-factors, including mobile */
 @media screen and (max-width: 980px) {
-    .cs-section {
+    .cs-section-smaller, .cs-section {
         width: 100vw;
     }
 }
