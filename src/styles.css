@@ -113,7 +113,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 .cs-font-quote {
     color: var(--color-secondary-lighter);
     font-family: var(--font-family-gotham);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
 }
 

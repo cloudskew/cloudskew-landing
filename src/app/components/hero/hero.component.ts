@@ -32,7 +32,7 @@ export class HeroComponent implements OnInit {
       ],
       typeSpeed: 100,
       startDelay: 5000,
-      backSpeed: 30,
+      backSpeed: 60,
       backDelay: 2000,
       loop: true,
       loopCount: Infinity,
