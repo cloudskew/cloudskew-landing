@@ -41,3 +41,14 @@
     /* layout */
     display: block;
 }
+
+.hero-cta-context a {
+    /* text styling */
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.hero-cta-context a:hover, .hero-cta-context a:focus {
+    /* text styling */
+    text-decoration: underline;
+}

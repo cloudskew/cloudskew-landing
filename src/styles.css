@@ -128,6 +128,7 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     font-family: var(--font-family-gotham);
     font-size: 20px;
     font-weight: 200;
+    line-height: 1.2;
 }
 
 .cs-font-primary-content {
