@@ -20,8 +20,8 @@ stages:
           # The above 'npm install' step does not install the angular cli globally.
           # We can install it globally with 'sudo npm install -g @angular/cli'.
           # However easier to invoke the local copy from the node_modules folder.
-          - script: ./node_modules/@angular/cli/bin/ng build -c ${{parameters.buildConfiguration}}
-            displayName: ng build -c ${{parameters.buildConfiguration}}
+          - script: ./node_modules/@angular/cli/bin/ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}}
+            displayName: ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}}
           # Publish the pipeline artifact
           - task: PublishPipelineArtifact@1
             displayName: publish artifact
@@ -64,7 +64,7 @@ stages:
                   inputs:
                     azureSubscription: ${{parameters.azureSubscription}}
                     scriptLocation: inlineScript
-                    inlineScript: az storage blob sync --account-name ${{parameters.storageAccountName}} -c '$web' -s './dist/cloudskew-landing'
+                    inlineScript: az storage blob sync --account-name ${{parameters.storageAccountName}} -c '$web' -s './dist/cloudskew-landing/browser'
                 # Purge the CDN endpoint
                 - task: AzureCLI@1
                   displayName: purge CDN endpoint

@@ -40,6 +40,7 @@ export class HeroComponent implements OnInit {
       showCursor: false,
     };
 
-    var typedjs = new Typed('.cs-section-title-cursor', typedjsOptions);
+    // Note: Temporarily commented out until we figure out how to prerender this.
+    // var typedjs = new Typed('.cs-section-title-cursor', typedjsOptions);
   }
 }
