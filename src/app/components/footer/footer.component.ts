@@ -13,6 +13,7 @@ export class FooterComponent implements OnInit {
   blogUrl = UrlConstants.blogUrl;
   brandingLogoUrl = UrlConstants.brandingLogoUrl;
   docsUrl = UrlConstants.docsUrl;
+  faqsUrl = UrlConstants.faqsUrl;
   privacyPolicyUrl = UrlConstants.privacyPolicyUrl;
   statusUrl = UrlConstants.statusUrl;
   termsOfServiceUrl = UrlConstants.termsOfServiceUrl;
