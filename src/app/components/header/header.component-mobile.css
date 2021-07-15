@@ -1,6 +1,0 @@
-/* mobile layout */
-@media screen and (max-width: 980px) {
-    .header-nav {
-        display: none;
-    }
-}
