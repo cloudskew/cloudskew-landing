@@ -25,7 +25,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     SamplesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
   ],
   providers: [],
