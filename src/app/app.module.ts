@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -10,7 +11,6 @@ import { HeroComponent } from './components/hero/hero.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { SamplesComponent } from './components/samples/samples.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
-
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
