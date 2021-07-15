@@ -113,7 +113,9 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
     /* This class is required for typed.js to work. */
     /* Don't delete, even though it may be empty. */
     color: var(--color-secondary-lighter);
-    text-decoration: underline;
+
+    /* uncomment below line when typed.js effect is working again */
+    /* text-decoration: underline; */
 }
 
 .cs-font-branding {
