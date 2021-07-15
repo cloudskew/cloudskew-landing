@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Configuration, init as typewriterInit } from 'ityped';
 import { UrlConstants } from 'src/app/constants/urlConstants';
 import { environment } from 'src/environments/environment';
-import Typed from 'typed.js';
 
 
 @Component({
@@ -15,32 +16,39 @@ export class HeroComponent implements OnInit {
   appUrl = UrlConstants.appUrl;
   heroImageUrl = `${environment.cdnUrlPrefix}/assets/misc/landing-page-hero-3.png`;
 
-  constructor() { }
+  constructor(
+    // details: https://angular.io/guide/universal#working-around-the-browser-apis
+    @Inject(DOCUMENT) private document: HTMLDocument,
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) { }
 
-  ngOnInit(): void {
 
-    var typedjsOptions = {
-      strings: [
-        'Cloud Architecture',
-        'AWS',
-        'Azure',
-        'Google Cloud',
-        'Kubernetes',
-        'Oracle Cloud',
-        'Alibaba Cloud',
-        'IBM Cloud',
-        'Elastic Cloud',
-        'Cloud Architecture',
-      ],
-      typeSpeed: 100,
-      startDelay: 2000,
-      backSpeed: 30,
-      backDelay: 2000,
-      loop: true,
-      showCursor: false,
-    };
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
 
-    // Note: Temporarily commented out until we figure out how to prerender this.
-    // var typedjs = new Typed('.cs-section-title-cursor', typedjsOptions);
+      const config: Configuration = {
+        strings: [
+          'AWS',
+          'Azure',
+          'Google Cloud',
+          'Kubernetes',
+          'Oracle Cloud',
+          'Alibaba Cloud',
+          'IBM Cloud',
+          'Elastic Cloud',
+          'Cloud Architecture',
+        ],
+        typeSpeed: 100,
+        startDelay: 2000,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+        showCursor: false,
+      };
+
+      const elem: Element = this.document.querySelector('#cs-section-title-cursor') as Element;
+
+      typewriterInit(elem, config);
+    }
   }
 }
