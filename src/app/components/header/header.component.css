@@ -48,7 +48,7 @@
     text-decoration: underline;
 }
 
-.cs-cta-button { /* use this class with <a> tags only */
+.header-cta-button { /* use this class with <a> tags only */
     background-color: var(--color-accent);
 
     /* layout */
@@ -59,7 +59,7 @@
     white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
-.cs-cta-button:hover, .cs-cta-button:focus {
+.header-cta-button:hover, .header-cta-button:focus {
     background-color: var(--color-accent-light);
 
     /* text styling */
