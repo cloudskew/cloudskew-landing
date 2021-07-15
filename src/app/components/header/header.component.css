@@ -27,6 +27,14 @@
     align-items: center;
 }
 
+.header-hamburger {
+    /* layout */
+    display: none; /* initially hidden in desktop mode */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
 .header-nav-link { /* use this class with <a> tags only */
     /* layout */
     margin: auto 0 auto 35px; /* left margin at 35px */
@@ -40,7 +48,7 @@
     text-decoration: underline;
 }
 
-.cs-cta-button { /* use this class with <a> tags only */
+.header-cta-button { /* use this class with <a> tags only */
     background-color: var(--color-accent);
 
     /* layout */
@@ -51,7 +59,7 @@
     white-space: nowrap; /* to prevent button text from wrapping at lesser screen resolutions */
 }
 
-.cs-cta-button:hover, .cs-cta-button:focus {
+.header-cta-button:hover, .header-cta-button:focus {
     background-color: var(--color-accent-light);
 
     /* text styling */
@@ -61,5 +69,15 @@
 @media screen and (max-width: 1200px) {
     .header-nav-link {
         margin: auto 0 auto 25px; /* left margin at 25px */
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header-nav {
+        display: none;
+    }
+    
+    .header-hamburger {
+        display: unset;
     }
 }

@@ -3,11 +3,11 @@ import { UrlConstants } from 'src/app/constants/urlConstants';
 import { SidenavService } from 'src/app/services/sidenav.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-mobile-menu',
+  templateUrl: './mobile-menu.component.html',
+  styleUrls: ['./mobile-menu.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class MobileMenuComponent implements OnInit {
 
   //
   appUrl = UrlConstants.appUrl;
@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   brandingLogoUrl = UrlConstants.brandingLogoUrl;
   docsUrl = UrlConstants.docsUrl;
   statusUrl = UrlConstants.statusUrl;
-  title = "CloudSkew";
+
 
   constructor(
     private sidenavService: SidenavService,
@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  onHamburgerMenuClick() {
-    this.sidenavService.request();
+  onMenuItemClicked() {
+    this.sidenavService.request(); // toggles (closes) this open menu
   }
 }
