@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  appUrl: 'https://www.cloudskew.com',
+  appUrl: 'https://app.cloudskew.com',
   blogUrl: 'https://blog.cloudskew.com',
   cdnUrlPrefix: 'https://assets.cloudskew.com',
   docsUrl: 'https://docs.cloudskew.com',
