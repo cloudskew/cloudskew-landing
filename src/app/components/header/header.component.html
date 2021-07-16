@@ -7,8 +7,8 @@
             <div class="header-branding">
                 <!-- branding logo -->
                 <a class="header-branding-logo" href="#">
-                    <img [src]="this.brandingLogoUrl" [title]="this.title" [alt]="this.title" width="50px"
-                        height="50px">
+                    <img [src]="this.brandingLogoUrl" [title]="this.title" [alt]="this.title" width="50px" height="50px"
+                        loading="lazy">
                 </a>
 
                 <!-- branding text -->
@@ -26,14 +26,14 @@
                     rel="noopener noreferrer">Blog</a>
                 <a class="header-nav-link cs-font-secondary-content" [href]="this.statusUrl" target="_blank"
                     rel="noopener noreferrer">Status</a>
-                <a class="header-nav-link cs-font-secondary-content header-cta-button" [href]="this.appUrl" target="_blank"
-                    rel="noopener noreferrer">Go To
+                <a class="header-nav-link cs-font-secondary-content header-cta-button" [href]="this.appUrl"
+                    target="_blank" rel="noopener noreferrer">Go To
                     App</a>
             </div>
 
             <!-- hamburger menu section (mobile only) -->
             <img class="header-hamburger" src="../../../assets/hamburger-icon.svg" height="50px" width="50px"
-                title="mobile menu" alt="mobile menu" (click)="this.onHamburgerMenuClick()">
+                title="mobile menu" alt="mobile menu" loading="lazy" (click)="this.onHamburgerMenuClick()">
 
         </div>
 

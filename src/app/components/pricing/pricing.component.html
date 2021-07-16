@@ -19,12 +19,12 @@
                     <div class="pricing-table-features">
                         <div class="pricing-table-features-row" *ngFor="let feature of plan.features">
                             <img class="pricing-table-features-row-checkbox" [src]="feature.checkboxIcon"
-                                [alt]="feature.featureText" width="16px" height="16px">
+                                [alt]="feature.featureText" width="16px" height="16px" loading="lazy">
                             <span
                                 class="pricing-table-features-row-featureText cs-font-secondary-content">{{feature.featureText}}</span>
                             <img *ngIf="feature.featureContext" [src]="feature.featureContextIcon"
                                 [title]="feature.featureContext" [alt]="feature.featureContext" width="16px"
-                                height="16px">
+                                height="16px" loading="lazy">
                         </div>
                     </div>
                 </div>
