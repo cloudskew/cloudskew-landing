@@ -8,6 +8,7 @@ export const environment = {
   blogUrl: 'http://localhost:4202',
   cdnUrlPrefix: 'https://cloudskewtest.azureedge.net',
   docsUrl: 'http://localhost:4203',
+  googleAnalyticsTrackingId: 'UA-96116826-3',
 };
 
 /*

@@ -4,4 +4,5 @@ export const environment = {
   blogUrl: 'https://cloudskewblogtest.azureedge.net',
   cdnUrlPrefix: 'https://cloudskewtest.azureedge.net',
   docsUrl: 'https://cloudskewdocstest.azureedge.net',
+  googleAnalyticsTrackingId: 'UA-96116826-3',
 };
