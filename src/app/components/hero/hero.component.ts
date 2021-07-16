@@ -25,30 +25,32 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-
-      const config: Configuration = {
-        strings: [
-          'AWS',
-          'Azure',
-          'Google Cloud',
-          'Kubernetes',
-          'Oracle Cloud',
-          'Alibaba Cloud',
-          'IBM Cloud',
-          'Elastic Cloud',
-          'Cloud Architecture',
-        ],
-        typeSpeed: 100,
-        startDelay: 2000,
-        backSpeed: 30,
-        backDelay: 2000,
-        loop: true,
-        showCursor: false,
-      };
-
-      const elem: Element = this.document.querySelector('#cs-section-title-cursor') as Element;
-
-      typewriterInit(elem, config);
+      this.enableTypewriter();
     }
+  }
+
+  private enableTypewriter() {
+    const elem: Element = this.document.querySelector('#cs-section-title-cursor') as Element;
+    const config: Configuration = {
+      strings: [
+        'AWS',
+        'Azure',
+        'Google Cloud',
+        'Kubernetes',
+        'Oracle Cloud',
+        'Alibaba Cloud',
+        'IBM Cloud',
+        'Elastic Cloud',
+        'Cloud Architecture',
+      ],
+      typeSpeed: 100,
+      startDelay: 2000,
+      backSpeed: 30,
+      backDelay: 2000,
+      loop: true,
+      showCursor: false,
+    };
+
+    typewriterInit(elem, config);
   }
 }
