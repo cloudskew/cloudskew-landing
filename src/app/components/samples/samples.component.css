@@ -68,12 +68,12 @@
     border: 1px solid #DEDDDD;
 
     /* styling */
-    box-shadow: 10px 10px 10px var(--color-secondary-lighter);
+    box-shadow: 5px 5px 5px var(--color-secondary-lightest);
 }
 
 .samples-gallery-item-image img:hover {
     /* styling */
-    box-shadow: 15px 15px 10px var(--color-secondary-lighter);
+    box-shadow: 10px 10px 10px var(--color-secondary-lightest);
 }
 
 @media screen and (max-width: 1200px) {
