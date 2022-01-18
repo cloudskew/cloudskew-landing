@@ -41,6 +41,7 @@ export class HeroComponent implements OnInit {
         'Alibaba Cloud',
         'IBM Cloud',
         'Elastic Cloud',
+        'Network',
         'Cloud Architecture',
       ],
       typeSpeed: 100,

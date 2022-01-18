@@ -24,13 +24,11 @@ export class PricingComponent implements OnInit {
       features: [
         {
           checkboxIcon: "../../../assets/check-icon-black.svg",
-          featureText: "3 diagrams",
+          featureText: "2 diagrams",
         },
         {
           checkboxIcon: "../../../assets/check-icon-black.svg",
-          featureText: "3 templates",
-          featureContext: "Create up to 3 reusable diagram templates",
-          featureContextIcon: "../../../assets/info-icon-black.svg",
+          featureText: "1 template",
         },
         {
           checkboxIcon: "../../../assets/check-icon-black.svg",
