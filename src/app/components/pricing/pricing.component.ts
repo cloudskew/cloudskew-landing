@@ -24,7 +24,7 @@ export class PricingComponent implements OnInit {
       features: [
         {
           checkboxIcon: "../../../assets/check-icon-black.svg",
-          featureText: "2 diagrams",
+          featureText: "1 diagram",
         },
         {
           checkboxIcon: "../../../assets/check-icon-black.svg",
