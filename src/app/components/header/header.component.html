@@ -6,7 +6,7 @@
             <!-- branding section -->
             <div class="header-branding">
                 <!-- branding logo -->
-                <a class="header-branding-logo" href="#">
+                <a class="header-branding-logo" routerLink="">
                     <img [src]="this.brandingLogoUrl" [title]="this.title" [alt]="this.title" width="50px" height="50px"
                         loading="lazy">
                 </a>
@@ -17,9 +17,10 @@
 
             <!-- nav / links section (desktop only) -->
             <div class="header-nav">
-                <a class="header-nav-link cs-font-secondary-content" href="#samples">Samples</a>
-                <a class="header-nav-link cs-font-secondary-content" href="#testimonials">Testimonials</a>
-                <a class="header-nav-link cs-font-secondary-content" href="#pricing">Pricing</a>
+                <a class="header-nav-link cs-font-secondary-content" routerLink="" fragment="samples">Samples</a>
+                <a class="header-nav-link cs-font-secondary-content" routerLink=""
+                    fragment="testimonials">Testimonials</a>
+                <a class="header-nav-link cs-font-secondary-content" routerLink="" fragment="pricing">Pricing</a>
                 <a class="header-nav-link cs-font-secondary-content" [href]="this.docsUrl" target="_blank"
                     rel="noopener noreferrer">Docs</a>
                 <a class="header-nav-link cs-font-secondary-content" [href]="this.blogUrl" target="_blank"
@@ -27,8 +28,7 @@
                 <a class="header-nav-link cs-font-secondary-content" [href]="this.statusUrl" target="_blank"
                     rel="noopener noreferrer">Status</a>
                 <a class="header-nav-link cs-font-secondary-content header-cta-button" [href]="this.appUrl"
-                    target="_blank" rel="noopener noreferrer">Go To
-                    App</a>
+                    target="_blank" rel="noopener noreferrer">Go To App</a>
             </div>
 
             <!-- hamburger menu section (mobile only) -->
