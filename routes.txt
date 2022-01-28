@@ -1,5 +1,2 @@
 /solutions/draw-aws-diagrams-online
 /solutions/draw-aws-architecture-online
-/
-*
-**
