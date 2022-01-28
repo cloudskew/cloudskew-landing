@@ -17,7 +17,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 // Note: If you modify any routes here, please be sure to update the 'routes.txt' file accordingly.
 // Context: https://angular.io/guide/prerendering#prerendering-dynamic-routes
 const routes: Routes = [
-  { path: 'solutions/:id', component: HeroComponent, },
+  { path: 'solutions/:solutionId', component: HeroComponent, },
   { path: '', component: HeroComponent, }, // default route
   { path: '**', redirectTo: '/', }, // wildcard route
 ];

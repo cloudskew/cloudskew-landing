@@ -3,10 +3,11 @@ import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Configuration, init as typewriterInit } from 'ityped';
-import { PageTitleConstants } from 'src/app/constants/pageTitleConstants';
-import { SolutionIds } from 'src/app/constants/solutionIds';
+import { PageTitleConstants } from 'src/app/constants/page-title-constants';
+import { SolutionKeys } from 'src/app/constants/solution-keys';
+import { SolutionRoutes } from 'src/app/constants/solution-routes';
 import { UrlConstants } from 'src/app/constants/urlConstants';
-import { environment } from 'src/environments/environment';
+import { PageCustomization } from './page-customization';
 
 
 @Component({
@@ -18,7 +19,18 @@ export class HeroComponent implements OnInit {
 
   //
   appUrl = UrlConstants.appUrl;
-  heroImageUrl = `${environment.cdnUrlPrefix}/assets/misc/landing-page-hero-3.png`;
+  heroImageUrl = UrlConstants.heroImageUrlAzure;
+  customizations: Record<SolutionKeys, PageCustomization> = {
+    ALIBABA: { pageTitle: PageTitleConstants.ALIBABA, heroImageUrl: UrlConstants.heroImageUrlAlibaba },
+    AWS: { pageTitle: PageTitleConstants.AWS, heroImageUrl: UrlConstants.heroImageUrlAws },
+    AZURE: { pageTitle: PageTitleConstants.AZURE, heroImageUrl: UrlConstants.heroImageUrlAzure },
+    CLOUD: { pageTitle: PageTitleConstants.CLOUD, heroImageUrl: UrlConstants.heroImageUrlAzure },
+    DEFAULT: { pageTitle: PageTitleConstants.DEFAULT, heroImageUrl: UrlConstants.heroImageUrlAzure },
+    GCP: { pageTitle: PageTitleConstants.GCP, heroImageUrl: UrlConstants.heroImageUrlGCP },
+    K8S: { pageTitle: PageTitleConstants.K8S, heroImageUrl: UrlConstants.heroImageUrlK8S },
+    MULTICLOUD: { pageTitle: PageTitleConstants.MULTICLOUD, heroImageUrl: UrlConstants.heroImageUrlAzure },
+    OCI: { pageTitle: PageTitleConstants.OCI, heroImageUrl: UrlConstants.heroImageUrlOCI },
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -32,15 +44,15 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      const id = params.get('id');
-      if (id) {
-        const pageTitle = this.getPageTitle(id);
-        this.titleService.setTitle(pageTitle);
-        this.heroImageUrl = this.getHeroImageUrl(id);
-      }
       if (isPlatformBrowser(this.platformId)) {
         this.enableTypewriter();
       }
+
+      const solutionId = params.get('solutionId');
+      const customizations = this.getPageCustomization(solutionId);
+
+      this.titleService.setTitle(customizations.pageTitle);
+      this.heroImageUrl = customizations.heroImageUrl;
     });
   }
 
@@ -48,25 +60,36 @@ export class HeroComponent implements OnInit {
 
   //#region private helper methods
 
-  private getHeroImageUrl(id: string): string {
-    switch (id.trim().toLowerCase()) {
-      case SolutionIds.AWS1:
-      case SolutionIds.AWS2:
-        return `${environment.cdnUrlPrefix}/assets/misc/landing-page-hero-2.jpg`;
-      default:
-        return this.heroImageUrl;
+  private getPageCustomization(solutionId: string | null): PageCustomization {
+    if (solutionId) {
+      switch (solutionId.trim().toLowerCase()) {
+        case SolutionRoutes.ALIBABA1:
+          return this.customizations['ALIBABA'];
+        case SolutionRoutes.AWS1:
+          return this.customizations['AWS'];
+        case SolutionRoutes.AZURE1:
+          return this.customizations['AZURE'];
+        case SolutionRoutes.CLOUD1:
+          return this.customizations['CLOUD'];
+        case SolutionRoutes.GCP1:
+        case SolutionRoutes.GCP2:
+          return this.customizations['GCP'];
+        case SolutionRoutes.K8S1:
+          return this.customizations['K8S'];
+        case SolutionRoutes.MULTICLOUD1:
+          return this.customizations['MULTICLOUD'];
+        case SolutionRoutes.OCI1:
+        case SolutionRoutes.OCI2:
+          return this.customizations['OCI'];
+        default:
+        case 'DEFAULT':
+          return this.customizations['DEFAULT'];
+      }
     }
+
+    return this.customizations['DEFAULT'];
   }
 
-  private getPageTitle(id: string): string {
-    switch (id.trim().toLowerCase()) {
-      case SolutionIds.AWS1:
-      case SolutionIds.AWS2:
-        return PageTitleConstants.awsTitle;
-      default:
-        return PageTitleConstants.defaultTitle;
-    }
-  }
 
   private enableTypewriter() {
     const elem: Element = this.document.querySelector('#cs-section-title-cursor') as Element;
