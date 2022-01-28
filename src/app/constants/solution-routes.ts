@@ -1,6 +1,6 @@
 export class SolutionRoutes {
     // Please keep this list alphabetically sorted.
-    // Note: If you modify any routes here, please be sure to update the 'routes.txt' file accordingly.
+    // Note: If you modify any routes here, please be sure to update the 'routes.txt', 'sitemap.txt' file accordingly.
     // Context: https://angular.io/guide/prerendering#prerendering-dynamic-routes
     public static readonly ALIBABA1 = 'draw-alibaba-cloud-architecture-diagrams-online';
     public static readonly AWS1 = 'draw-aws-architecture-diagrams-online';
