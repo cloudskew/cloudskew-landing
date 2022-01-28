@@ -14,14 +14,17 @@ stages:
     jobs:
       - job: build
         steps:
+          # Install angular CLI globally
+          - script: npm install -g @angular/cli
+            displayName: npm install -g @angular/cli
           # Install all the prerequisites
           - script: npm install
             displayName: npm install
           # The above 'npm install' step does not install the angular cli globally.
           # We can install it globally with 'sudo npm install -g @angular/cli'.
           # However easier to invoke the local copy from the node_modules folder.
-          - script: ./node_modules/@angular/cli/bin/ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}} --routes-file routes.txt
-            displayName: ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}}
+          - script: ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}} --routes-file routes.txt
+            displayName: ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}} --routes-file routes.txt
           # Publish the pipeline artifact
           - task: PublishPipelineArtifact@1
             displayName: publish artifact
