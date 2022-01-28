@@ -14,6 +14,8 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { SamplesComponent } from './components/samples/samples.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
+// Note: If you modify any routes here, please be sure to update the 'routes.txt' file accordingly.
+// Context: https://angular.io/guide/prerendering#prerendering-dynamic-routes
 const routes: Routes = [
   { path: 'solutions/:id', component: HeroComponent, },
   { path: '', component: HeroComponent, }, // default route
