@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FeatureItem } from './featureItem';
 
 @Component({
@@ -6,7 +6,7 @@ import { FeatureItem } from './featureItem';
   templateUrl: './features.component.html',
   styleUrls: ['./features.component.css']
 })
-export class FeaturesComponent implements OnInit {
+export class FeaturesComponent {
 
   // 
   featureItems: FeatureItem[] = [
@@ -43,8 +43,4 @@ export class FeaturesComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

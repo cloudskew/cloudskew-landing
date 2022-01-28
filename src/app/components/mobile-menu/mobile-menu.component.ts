@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UrlConstants } from 'src/app/constants/urlConstants';
 import { SidenavService } from 'src/app/services/sidenav.service';
 
@@ -7,7 +7,7 @@ import { SidenavService } from 'src/app/services/sidenav.service';
   templateUrl: './mobile-menu.component.html',
   styleUrls: ['./mobile-menu.component.css']
 })
-export class MobileMenuComponent implements OnInit {
+export class MobileMenuComponent {
 
   //
   appUrl = UrlConstants.appUrl;
@@ -20,9 +20,6 @@ export class MobileMenuComponent implements OnInit {
   constructor(
     private sidenavService: SidenavService,
   ) {
-  }
-
-  ngOnInit() {
   }
 
   onMenuItemClicked() {

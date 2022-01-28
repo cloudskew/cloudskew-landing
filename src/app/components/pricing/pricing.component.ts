@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UrlConstants } from 'src/app/constants/urlConstants';
 import { PricingTable } from './pricingTable';
 
@@ -7,7 +7,7 @@ import { PricingTable } from './pricingTable';
   templateUrl: './pricing.component.html',
   styleUrls: ['./pricing.component.css']
 })
-export class PricingComponent implements OnInit {
+export class PricingComponent {
 
   //
   appUrl = UrlConstants.appUrl;
@@ -97,8 +97,4 @@ export class PricingComponent implements OnInit {
 
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
