@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UrlConstants } from 'src/app/constants/urlConstants';
 
 @Component({
@@ -6,7 +6,7 @@ import { UrlConstants } from 'src/app/constants/urlConstants';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
   // urls
   appUrl = UrlConstants.appUrl;
@@ -24,9 +24,5 @@ export class FooterComponent implements OnInit {
   twitterText = "Twitter";
   youtubeText = "YouTube";
 
-
   constructor() { }
-
-  ngOnInit(): void {
-  }
 }

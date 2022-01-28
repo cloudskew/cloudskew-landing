@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { UrlConstants } from 'src/app/constants/urlConstants';
+import { Component } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { GalleryItem } from './galleryItem';
 
@@ -8,7 +7,7 @@ import { GalleryItem } from './galleryItem';
   templateUrl: './samples.component.html',
   styleUrls: ['./samples.component.css']
 })
-export class SamplesComponent implements OnInit {
+export class SamplesComponent {
 
   //
   galleryItems: GalleryItem[] = [
@@ -58,6 +57,4 @@ export class SamplesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 }

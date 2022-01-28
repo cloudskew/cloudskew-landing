@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TestimonialItem } from './testimonialItem';
 
 @Component({
@@ -6,7 +6,7 @@ import { TestimonialItem } from './testimonialItem';
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.css']
 })
-export class TestimonialsComponent implements OnInit {
+export class TestimonialsComponent {
 
   //
   testimonialItems: TestimonialItem[] = [
@@ -55,8 +55,4 @@ export class TestimonialsComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
