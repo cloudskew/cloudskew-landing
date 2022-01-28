@@ -5,6 +5,7 @@ pool:
 
 trigger:
   - master
+  - mithun/pages #@todo - for testing only, remove later
 
 pr: none
 

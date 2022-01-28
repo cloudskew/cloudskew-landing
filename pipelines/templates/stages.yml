@@ -20,7 +20,7 @@ stages:
           # The above 'npm install' step does not install the angular cli globally.
           # We can install it globally with 'sudo npm install -g @angular/cli'.
           # However easier to invoke the local copy from the node_modules folder.
-          - script: ./node_modules/@angular/cli/bin/ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}}
+          - script: ./node_modules/@angular/cli/bin/ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}} --routes-file routes.txt
             displayName: ng run cloudskew-landing:prerender -c ${{parameters.buildConfiguration}}
           # Publish the pipeline artifact
           - task: PublishPipelineArtifact@1
