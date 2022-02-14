@@ -95,6 +95,7 @@ export class HeroComponent implements OnInit {
     const elem: Element = this.document.querySelector('#cs-section-title-cursor') as Element;
     const config: Configuration = {
       strings: [
+        'Flowchart',
         'AWS',
         'Azure',
         'Google Cloud',

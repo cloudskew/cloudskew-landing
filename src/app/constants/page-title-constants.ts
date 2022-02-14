@@ -1,5 +1,5 @@
 export class PageTitleConstants { 
-    public static readonly DEFAULT = 'Free AWS, Azure, GCP, Kubernetes Architecture Diagram Tool | CloudSkew';
+    public static readonly DEFAULT = 'Online Flowchart Maker | CloudSkew';
 
     // Please keep the rest of this list alphabetically sorted.
     public static readonly ALIBABA = 'Free Alibaba Cloud Architecture Diagram Tool | CloudSkew';
