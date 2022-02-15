@@ -1,23 +1,4 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#482156",
-        "activityBar.activeBorder": "#73602c",
-        "activityBar.background": "#482156",
-        "activityBar.foreground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#73602c",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "statusBar.background": "#291331",
-        "statusBar.foreground": "#e7e7e7",
-        "statusBarItem.hoverBackground": "#482156",
-        "titleBar.activeBackground": "#291331",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#29133199",
-        "titleBar.inactiveForeground": "#e7e7e799",
-        "sash.hoverBorder": "#482156",
-        "statusBarItem.remoteBackground": "#291331",
-        "statusBarItem.remoteForeground": "#e7e7e7"
-    },
     "peacock.remoteColor": "#291331",
     "cSpell.words": [
         "alibaba",
